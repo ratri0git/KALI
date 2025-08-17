@@ -1,0 +1,6 @@
+STANDARD OUT : 
+
+    OVERWRITE WITH REDIRECTION : echo New Message > Filename
+
+    APPEND AT END OF FILE WITH REDIRECTION : echo New Message >> Filename
+
