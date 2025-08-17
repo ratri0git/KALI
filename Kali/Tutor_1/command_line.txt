@@ -1,0 +1,179 @@
+SHELL:
+    
+    LOGIN : Username@Hostname
+
+    GET USERNAME : whoami
+
+
+PRINT WORKING DIRECTORY :
+
+    GET PWD : pwd
+
+
+CHANGE DIRECTORY : 
+
+    CHANGE DIRECTORY : cd Path/To/Directory
+
+    CURRENT DIRECTORY : cd .
+
+    PARENT DIRECTORY : cd ..
+
+    HOME DIRECTORY : cd ~
+
+    LAST ACTIVE DIRECTORY : cd -
+
+
+LIST DIRECTORIES :
+
+    FOR PRESENT WORKING DIRECTORY : ls
+
+    FOR ANY DIRECTORY : ls Path/to/Directory
+
+    LIST INCLUDING HIDDEN FILES : ls -a
+
+        HIDDEN FILE NAME : .StartWithDot
+
+    DETAILED LIST : ls -l
+
+    RECURSIVELY LIST DIRECTORY CONTENTS : ls -R
+
+    SORT IN REVERSE ORDER : ls -r
+
+    SORT BY MODIFICATION TIME : ls -t
+
+
+TOUCH :
+
+    CREATE FILE : touch Filename.extension
+
+    CHANGE TIMESTAMPS : touch Filename
+
+    FILE NAME WITH SPECIAL CHARACTORS LIKE DASH : 
+
+        touch ./-Filename
+        touch -- -Filename
+
+
+
+FILE :
+
+    DESCRIPTION OF FILE CONTENTS : file Filename.extension
+
+
+CAT : 
+
+    READ FILES : cat file_1 file_2 file_N
+
+
+LESS :
+
+    READ FILE IN PAGED MANNER : less Path/To/File
+
+    QUIT LESS MODE : q
+
+    SEARCH IN LESS MODE : /KeyWord
+
+    FOR MORE HELP : h
+
+
+HISTORY : 
+
+    LIST ALL PREVIOUSLY USED COMMANDS : history
+
+    RUN LAST COMMAND : !!
+
+    SEARCH COMMAND IN HISTORY : ctrl+R and part of command
+
+    AUTOMCOMPLETE : command + TAB
+
+    CLEAR TERMINAL : clear
+
+
+COPY : 
+
+    COPY AND PASTE : cp Source/File/Path Destination/Path
+
+    FILES ENDING/STARTING/CONTAINING WITH : cp Path/To/File/*KeyWord OR KeyWord* OR *KeyWord* Destination/Path
+
+    FILE NAME CONTAINING UNKNOWN CHARACTOR : cp Path/To/File/Known?Name Destination/Path
+
+    FILE NAME INCLUDE OR EXCLUDE KNOWN CHARACTORS : cp Path/To/File/Known[a1b2c3]Name Destination/Path
+
+    RECURSIVELY COPY CONTENTS WITHIN DIRECTORY : cp -r Directory/Path/ Destination/Path
+
+    INTERACTIVE IN CASE OF OVER WRITING : cp -i Path/To/File/ Destination/Path
+
+
+MOVE  : 
+
+    RENAME OR CUT AND PASTE : mv Source/File_OR_Folder/Path Destination/Path
+
+    CREATE BACKUP IN CASE OF OVER WRITING : mv -b Source/File_OR_Folder/Path Destination/Path
+
+
+MAKE DIRECTORY : 
+
+    CREATE DIRECTORY : mkdir Directory1 Directory2 DirectoryN
+
+    CREATE DIRECTORY WITH SUB DIRECTORIES : mkdir -p Folder/SubFolder/NextSubFolder
+
+
+REMOVE : 
+
+    DELETE FILES : rm File_1 File_2 File_N
+
+    FORCE DELETE INCLUDING WRITE PROTECTED FILES : rm -f File_1 File_N 
+
+    INTERACTIVE IN CASE OF UNWANTED DELETION : rm -i File_1 File_N
+
+    REMOVE DIRECTORY : rmdir Directory1 Directory_N
+
+    REMOVE NON EMPTY DIRECTORIES : rm -r Directory1 Directory_N
+
+    FILE NAME WITH SPECIAL CHARACTORS LIKE DASH : 
+
+        rm ./-Filename
+        rm -- Filename
+
+
+FIND : 
+
+    FILE BY NAME IN DIRECTORY : find /Directory -name Filename
+
+    FOLDER BY NAME IN DIRECTORY : find /Directory -type d -name Foldername
+
+
+HELP : 
+
+    GET HELP FOR COMMAND : help command
+
+    GET MANUAL FOR COMMAND : man command
+
+    GET SHORT DESCRIPTION : whatis command
+
+
+ALIAS :
+
+    CREATE ALIAS : alias nickname='commands'
+
+    CREATE PERMANENT ALIAS : go to ~/.bashrc and add above line
+
+    REMOVE ALIAS : unalias nickname
+
+
+EXIT :
+
+    EXIT FROM SHELL : exit
+
+    LOGOUT FROM SHELL : logout
+
+    POWEROFF SYSTEM : poweroff
+    
+     
+
+
+
+
+
+
+        
