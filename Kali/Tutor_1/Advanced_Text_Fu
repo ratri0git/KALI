@@ -1,0 +1,17 @@
+REGULAR EXPRESSIONS : 
+
+    LINE BIGINNING WITH PATTERN : grep ^Pattern Filename
+
+    LINE ENDING WITH PATTERN : grep Pattern$ Filename
+
+    LINE CONTAINING THIS CHARACTOR : grep char. Filename
+
+    LINE CONTAINING THESE CHARACTORS IN BRACKETS: grep some[a1B2c3]some Filename
+
+    LINE EXCLUDING CHARACTORS IN BRACKETS :  grep some[^a1b2C3]some Filename
+
+    LINE CONTAINING THESE CHARACTORS IN RANGE : grep some[A-Z]some Filename
+
+    
+
+    

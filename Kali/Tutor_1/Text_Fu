@@ -1,6 +1,118 @@
-STANDARD OUT : 
+STANDARD OUT (1) : 
+
+    CREATE EMPTY FILE : > Filename
 
     OVERWRITE WITH REDIRECTION : echo New Message > Filename
 
     APPEND AT END OF FILE WITH REDIRECTION : echo New Message >> Filename
+
+
+STANDARD IN (0) :
+    
+    REDIRECT INPUT TO COMMAND : command < Filename
+
+
+STANDARD ERROR (2) : 
+
+    REDIRECT ERROR MESSAGES TO FILE : commands 2> Filename
+
+    REDIRECT BOTH ERROR AND OUTPUT : commands &> Filename
+
+    DISCARD ALL INPUTS : commands &> /dev/null
+
+
+PIPE & TEE : 
+
+    OUTPUT OF ONE COMMAND INPUT FOR ANOTHER : command_1 | command_2  | command_3 
+
+    OUTPUT OF ONE PROCESS INPUT FOR MULTIPLE : command_1 | tee command_2 command_3
+
+
+ENVIRONMENT : 
+
+    VIEW ENVIRONMENT VARIABLES : env
+
+CUT : 
+    
+    Nth CHARACTOR FROM EACH LINE : cut -c N Filename
+
+    Nth PART BY FIELD SAPERATOR WITH DELIMITER : cut -f N -d "delimiter" Filename 
+
+    WITH RANGE : 
+
+        Nth TO Mth INDEX : cut -c N-M Filename
+
+        START TO Nth CHARACTOR : cut -c -N Filename
+
+        Nth CHARACTOR TO ENDING : cut -c N- Filename
+
+
+PASTE : 
+
+    MERGE LINES IN FILE : paste -d 'delimiter' -s Filename
+    
+    
+HEAD & TAIL : 
+
+    SEE FIRST N LINES IN FILE : head -n N Path/To/File
+
+    SEE LAST N LINES IN FILE : tail -n N Path/To/File
+
+    SEE LIVE UPDATES AT ENDING OF FILE : tail -f Path/To/File
+
+
+JOIN AND SPLIT : 
+
+    JOIN CONTENTS OF TWO SORTED FILES : join File_1 File_2
+
+    JOIN CONTENTS OF TWO UNSORTED FILES WITH MATCHING FIELD : join -1 Nth -2 Mth File_1 File_2
+
+    SPLIT FILE INTO FILES WITH EACH N LINES : split -l N BigFile
+
+
+SORT : 
+
+    SORT BY CHARACTOR VALUE : sort Filename
+
+    SORT REVERSE BY CHARACTOR VALUE : sort -r Filename
+
+    SORT BY NUMERIC VALUE : sort -n Filename
+
+
+TRANSLATE : 
+
+    CONVERT LOWER CASE TO UPPER CASE : tr a-z A-Z < Filename_OR_OtherInput
+
+    DELETE GIVEN CHARACTOR : tr -d given/charactor/set < Filename_OR_OtherInput
+
+
+UNIQUE : 
+
+    REMOVE DUPLICATE LINES : uniq Filename
+
+    GET NUMBER OF DUPLICATES OF LINES : uniq Filename
+
+    GET UNIQUE VALUES ONLY : uniq -u Filename
+
+    GET DUPLICATE VALUES ONLY : uniq -d Filename
+
+    OVERCOME NON ADJECENT DUPLICATES : sort Filename | uniq
+
+
+WORD LINE COUNT : 
+
+    NUMBER OF WORDS IN FILE : wc -w Filename
+
+    NUMBER OF LINES IN FILE : wc -l Filename
+
+    NUMBER OF BYTES IN FILE : wc -c Filename
+
+    ADD COUNT TO EACH LINE : nl Filename
+
+
+GREP :
+
+    SEARCH PATTERN IN FILE : grep KeyPattern Filename
+
+    IGNORE LOWER UPPER CASES IN PATTERN : grep -i KeyPattern Filename
 
