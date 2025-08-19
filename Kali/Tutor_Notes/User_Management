@@ -39,7 +39,7 @@ USER MANAGEMENT :
 
     REMOVE USER : sudo userdel Username
 
-    CHANGE PASSWORD : passwd Username
+    CHANGE PASSWORD : sudo passwd Username
 
 
-   
+

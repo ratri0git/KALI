@@ -36,6 +36,17 @@ UMASK :
     CHANGE DEFAULT PERMISSION FOR FILE CREATION : umask 021 {all permissions except 021 will be given}
 
     
+SET USER OR GROUP ID : 
+
+    GIVE SUID TO USER : sudo chmod u+s Filename
+        EXECUTABLE : s
+        NON EXECUTABLE : S
+
+    GIVE SGID TO GROUP : sudo chmod g+s Filename
+
+
+
+
 
 
 
