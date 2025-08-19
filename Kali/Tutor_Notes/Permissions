@@ -45,13 +45,8 @@ SET USER OR GROUP ID :
     GIVE SGID TO GROUP : sudo chmod g+s Filename
 
 
+STICKY BIT : 
 
-
-
-
-
-
-
-
+    ONLY OWNER OR ROOT CAN DELETE : sudo chmod +t Foldername
 
 
