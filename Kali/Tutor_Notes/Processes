@@ -1,0 +1,65 @@
+ps aux : 
+
+    a : DISPLAY ALL PROCESSES INCLUDING ALL USERS
+    u : DISPLAY MORE DETAILS ABOUT PROCESSES
+    x : LIST ALL PROCESSES WITHOUT TTY
+
+        USER : Effective user
+        PID : PROCESS ID
+        %CPU : CPU Time used Divided by Time Process running
+        %MEM : Ratio of Process Resident Set Size to Physical Memory 
+        VSZ : Virtual Memory Usage of Whole Process
+        RSS : Resident Set Size, Non Swapped Physical Memory
+        TTY : CONTROLLING TERMINAL ASSOCIATED WITH PROCESS
+        STAT : PROCESS STATUS CODE
+        START : Start Time of Process
+        TIME : TOTAL CPU USAGE TIME
+        CMD : NAME OF EXECUTABLE OR COMMAND
+
+
+top : REAL TIME INFO OF PROCESS DEFUALT REFRESH EVERY 10 SECONDS 
+
+
+SIGNALS : 
+
+    SIGHUP or hup or 1: Hangup
+
+    SIGINT or int or 2: Interrupt
+
+    SIGKILL or kill or 9: Kill
+
+    SIGSEGV or segv or 11: Segmentation fault
+
+    SIGTERM or term or 15: Software termination
+
+    SIGSTOP or stop: Stop
+
+
+KILL COMMAND : 
+    kill PID 
+    kill -9 PID
+
+
+NICENESS MORE NEGATIVE MORE PRIORITY : 
+    
+    SET PRIORITY FOR NEW COMMAND to Nth : nice -n N Command
+
+    SET PRIORITY FOR EXISTING PROCESS : renice N -p PID
+
+PROCESS INFO FILE : ls /proc
+
+
+JOB CONTROL : 
+
+    SENDING NEW JOB TO BACKGROUND : commands &
+
+    VIEW JOBS : jobs
+
+    SENDING EXISTING JOB TO BACKGROUND : bg
+
+    BACKGROUND TO FOREGROUND : fg jobID
+
+    KILL BACKGROUND JOBS : kill jobID
+
+
+
