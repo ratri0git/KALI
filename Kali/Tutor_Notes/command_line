@@ -54,6 +54,10 @@ TOUCH :
         touch -- -Filename
 
 
+NANO EDITOR : 
+    
+    OPEN NANO EDITOR : nano Filename
+
 
 FILE :
 

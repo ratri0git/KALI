@@ -1,6 +1,0 @@
-Text_Fu
-command_line
-eassay      txt
-fakefile    png
-fakefile    txt
-newfile
