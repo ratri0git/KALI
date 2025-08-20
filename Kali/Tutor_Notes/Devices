@@ -1,0 +1,34 @@
+/DEV : 
+
+    LIST DEVICES : ls /dev
+
+
+/SYS : 
+
+    LIST DETAILS OF DEVICES : ls /sys/Disk/Partition
+
+
+UDEV : 
+
+    CREATE DEVICE NODE : mknod /dev/Disk_Partition Type Major  Minor
+
+
+LIST USB DEVICES : lsusb
+
+LIST PCI DEVICES : lspci
+
+LIST SCSI DEVICES : lsscsi
+
+
+DD : 
+
+    CONVERT AND COPY DATA : dd if=/Input_File/Path of=/Out_File/Path bs=Block_Size_INT count=COUNT_INT
+
+        if = INPUT FILE
+        oF = OUTPUT FILE
+        bs = WRITE THESE NUMBER OF BYTES AT A TIME
+        count = NUMBER OF BLOCKS TO COPY
+
+
+
+
