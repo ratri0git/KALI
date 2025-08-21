@@ -2,6 +2,8 @@ SHELL:
     
     LOGIN : Username@Hostname
 
+    COMMAND -OPTIONS ARGUMENTS
+
     GET USERNAME : whoami
 
 
