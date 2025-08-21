@@ -1,25 +1,3 @@
-STANDARD OUT (1) : 
-
-    CREATE EMPTY FILE : > Filename
-
-    OVERWRITE WITH REDIRECTION : echo New Message > Filename
-
-    APPEND AT END OF FILE WITH REDIRECTION : echo New Message >> Filename
-
-
-STANDARD IN (0) :
-    
-    REDIRECT INPUT TO COMMAND : command < Filename
-
-
-STANDARD ERROR (2) : 
-
-    REDIRECT ERROR MESSAGES TO FILE : commands 2> Filename
-
-    REDIRECT BOTH ERROR AND OUTPUT : commands &> Filename
-
-    DISCARD ALL INPUTS : commands &> /dev/null
-
 
 PIPE & TEE : 
 
@@ -51,15 +29,6 @@ PASTE :
 
     MERGE LINES IN FILE : paste -d 'delimiter' -s Filename
     
-    
-HEAD & TAIL : 
-
-    SEE FIRST N LINES IN FILE : head -n N Path/To/File
-
-    SEE LAST N LINES IN FILE : tail -n N Path/To/File
-
-    SEE LIVE UPDATES AT ENDING OF FILE : tail -f Path/To/File
-
 
 JOIN AND SPLIT : 
 

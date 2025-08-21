@@ -71,6 +71,11 @@ TOUCH :
         touch -- -Filename
 
 
+FILE :
+
+    DESCRIPTION OF FILE CONTENTS : file Filename.extension
+
+
 MAKE DIRECTORY : 
 
     CREATE DIRECTORY : mkdir Directory1 Directory2 DirectoryN
@@ -84,39 +89,12 @@ EDITORS :
 
     OPEN VIM : vim Filename
 
+    
+FIND : 
 
-FILE :
+    FILE BY NAME IN DIRECTORY : find /Directory -name Filename
 
-    DESCRIPTION OF FILE CONTENTS : file Filename.extension
-
-
-CAT : 
-
-    READ FILES : cat file_1 file_2 file_N
-
-
-LESS :
-
-    READ FILE IN PAGED MANNER : less Path/To/File
-
-    QUIT LESS MODE : q
-
-    SEARCH IN LESS MODE : /KeyWord
-
-    FOR MORE HELP : h
-
-
-HISTORY : 
-
-    LIST ALL PREVIOUSLY USED COMMANDS : history
-
-    RUN LAST COMMAND : !!
-
-    SEARCH COMMAND IN HISTORY : ctrl+R and part of command
-
-    AUTOMCOMPLETE : command + TAB
-
-    CLEAR TERMINAL : clear
+    FOLDER BY NAME IN DIRECTORY : find /Directory -type d -name Foldername
 
 
 COPY : 
@@ -160,13 +138,6 @@ REMOVE :
         rm -- Filename
 
 
-FIND : 
-
-    FILE BY NAME IN DIRECTORY : find /Directory -name Filename
-
-    FOLDER BY NAME IN DIRECTORY : find /Directory -type d -name Foldername
-
-
 ALIAS :
 
     CREATE ALIAS : alias nickname='commands'
@@ -174,6 +145,19 @@ ALIAS :
     CREATE PERMANENT ALIAS : go to ~/.bashrc and add above line
 
     REMOVE ALIAS : unalias nickname
+
+
+HISTORY : 
+
+    LIST ALL PREVIOUSLY USED COMMANDS : history
+
+    RUN LAST COMMAND : !!
+
+    SEARCH COMMAND IN HISTORY : ctrl+R and part of command
+
+    AUTOMCOMPLETE : command + TAB
+
+    CLEAR TERMINAL : clear
 
 
 
