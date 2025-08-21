@@ -20,7 +20,6 @@ HELP :
     GET SHORT DESCRIPTION : whatis command
 
 
-
 PRINT WORKING DIRECTORY :
 
     GET PWD : pwd
@@ -62,7 +61,7 @@ LISTING :
 
 TOUCH :
 
-    CREATE FILE : touch Filename.extension
+    CREATE FILE : touch "Filename.extension"
 
     CHANGE TIMESTAMPS : touch Filename
 
@@ -78,10 +77,12 @@ MAKE DIRECTORY :
 
     CREATE DIRECTORY WITH SUB DIRECTORIES : mkdir -p Folder/SubFolder/NextSubFolder
 
-    
+
 EDITORS : 
     
-    OPEN NANO EDITOR : nano Filename
+    OPEN NANO : nano Filename
+
+    OPEN VIM : vim Filename
 
 
 FILE :
