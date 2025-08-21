@@ -4,6 +4,22 @@ SHELL:
 
     GET USERNAME : whoami
 
+    EXIT FROM SHELL : exit
+
+    LOGOUT FROM SHELL : logout
+
+    POWEROFF SYSTEM : poweroff
+
+    
+HELP : 
+
+    GET HELP FOR COMMAND : help command
+
+    GET MANUAL FOR COMMAND : man command
+
+    GET SHORT DESCRIPTION : whatis command
+
+
 
 PRINT WORKING DIRECTORY :
 
@@ -56,7 +72,14 @@ TOUCH :
         touch -- -Filename
 
 
-NANO EDITOR : 
+MAKE DIRECTORY : 
+
+    CREATE DIRECTORY : mkdir Directory1 Directory2 DirectoryN
+
+    CREATE DIRECTORY WITH SUB DIRECTORIES : mkdir -p Folder/SubFolder/NextSubFolder
+
+    
+EDITORS : 
     
     OPEN NANO EDITOR : nano Filename
 
@@ -117,12 +140,6 @@ MOVE  :
     CREATE BACKUP IN CASE OF OVER WRITING : mv -b Source/File_OR_Folder/Path Destination/Path
 
 
-MAKE DIRECTORY : 
-
-    CREATE DIRECTORY : mkdir Directory1 Directory2 DirectoryN
-
-    CREATE DIRECTORY WITH SUB DIRECTORIES : mkdir -p Folder/SubFolder/NextSubFolder
-
 
 REMOVE : 
 
@@ -149,15 +166,6 @@ FIND :
     FOLDER BY NAME IN DIRECTORY : find /Directory -type d -name Foldername
 
 
-HELP : 
-
-    GET HELP FOR COMMAND : help command
-
-    GET MANUAL FOR COMMAND : man command
-
-    GET SHORT DESCRIPTION : whatis command
-
-
 ALIAS :
 
     CREATE ALIAS : alias nickname='commands'
@@ -167,13 +175,5 @@ ALIAS :
     REMOVE ALIAS : unalias nickname
 
 
-EXIT :
 
-    EXIT FROM SHELL : exit
-
-    LOGOUT FROM SHELL : logout
-
-    POWEROFF SYSTEM : poweroff
-
-    
      
