@@ -1,4 +1,3 @@
-
 PIPE & TEE : 
 
     OUTPUT OF ONE COMMAND INPUT FOR ANOTHER : command_1 | command_2  | command_3 

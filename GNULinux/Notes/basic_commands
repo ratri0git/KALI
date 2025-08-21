@@ -116,8 +116,11 @@ MOVE  :
 
     RENAME OR CUT AND PASTE : mv Source/File_OR_Folder/Path Destination/Path
 
-    CREATE BACKUP IN CASE OF OVER WRITING : mv -b Source/File_OR_Folder/Path Destination/Path
+    GIVE INFO WHAT IS HAPPENING : mv -v Source/File_OR_Folder/Path Destination/Path
 
+    PREVENT OVER WRITING : mv -n Source/File_OR_Folder/Path Destination/Path
+
+    CREATE BACKUP IN CASE OF OVER WRITING : mv -b Source/File_OR_Folder/Path Destination/Path
 
 
 REMOVE : 
@@ -145,6 +148,17 @@ ALIAS :
     CREATE PERMANENT ALIAS : go to ~/.bashrc and add above line
 
     REMOVE ALIAS : unalias nickname
+
+
+LINKING : 
+
+    CHECK LINKS INODE NUMBER : ls -i
+
+    CREATE HARD LINK : ln /Path/To/File LinkName
+
+    CREATE SOFT LINK : ln -s /Path/To/File LinkName
+
+    REMOVE LINK : unlink LinkName
 
 
 HISTORY : 
