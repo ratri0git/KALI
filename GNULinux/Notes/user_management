@@ -1,0 +1,149 @@
+SUPER USER ROOT : 
+
+    SUPER USER DO : sudo commands
+
+    SWITCH TO ROOT USER : sudo -i
+
+    SWITCH TO USER : sudo su - UserName
+
+
+NEW USER ACCOUNT :  
+    
+    ADD SERVICE ACCOUNT USER : sudo useradd UserName
+
+    ADD USER WITH HOME DIRECTORY : sudo useradd -m UserName 
+
+    ADD GENERAL USER : sudo adduser UserName
+
+    CHECK ALL USERS INFO : cat /etc/passwd
+
+    SHOW USER ID AND GROUPS ID : id UserName
+
+    SHOW USER PASSWORDS INFO : cat /etc/shadow
+
+    CHANGE PASSWORD : sudo passwd UserName
+
+
+EDIT /ETC/SHADOW : sudo chage -Options Arguments UserName
+
+
+EDIT /ETC/PASSWD : 
+
+    GET DATABASE ENTRY OF USER : getent passwd UserName
+
+    GET INFO ABOUT USER : finger UserName
+
+    CHANGE USER INFO  WITH FINGER : sudo chfn -Options Arguments UserName
+
+    UPDATE INFO IN PASSWD : sudo usermod -Options Arguments UserName
+
+
+LOCK UNLOCK : 
+
+    LOCK USER ACCOUNT : 
+        
+        sudo usermod -L UserName
+        sudo usermod -s /bin/nologin UserName
+
+    UNLOCK USER ACCOUNT : sudo usermod -U UserName
+
+
+DELETE USER : 
+
+    DELETE USER NAME : sudo userdel UserName
+
+    DELETE USER :  sudo deluser --remove-home UserName
+    
+
+ROOT PREVILAGE : 
+
+    ADD USER TO ROOT : sudo visudo and edit file
+
+    ADD USER TO GROUP SUDO :  sudo usermod -aG sudo UserName
+
+
+APPENDIX : 
+
+    DIRECTORY : d
+    FILE : -
+    LINK : l
+
+    READ : r OR 4
+    WRITE : w OR 2
+    EXECUTE : x OR 1 
+    EMPTY : - OR 0
+
+    USER : u
+    GROUP : g
+    OTHER : o
+    ALL : a
+
+    GIVE : +
+    TAKE : -
+
+
+CHANGE PERMISSIONS : 
+    
+    GIVE ALL PERMISSIONS TO ALL FOR FILE : 
+
+        chmod u=rwx,g=rwx,o=rwx Filename
+        chmod ugo=rwx Filename
+        chmod 777 Filename
+
+    GIVE ALL PERMISSIONS TO USER AND TAKE FROM GROUP AND OTHER : chmod u+rwx,go-rwx Filename
+
+    TAKE ALL PERMISSIONS FROM ALL : chmod a-rwx Filename
+
+    GIVE PERMISSIONS TO DIRECTORY AND CONTAINED FILES : chmod -R u=rwx,g=rx,o=r 
+
+
+CHANGE OWNESHIPS : 
+
+    CHANGE GROUP AND OWNER : sudo chown New_Owner:New_Group Filename
+
+    CHANGE OWNER : sudo chown New_Owner Filename
+
+    CHANGE GROUP : sudo chgrp New_Group Filename
+
+    
+GROUPS : 
+
+    CHECK A GROUP INFO : getent group GroupName
+
+    CREATE NEW GROUP : sudo groupadd GroupName
+
+    DELETE GROUP : sudo groupdel GroupName
+
+    MODIFY A GROUP : sudo groupmod -Options Arguments GroupName
+
+    CHECK ALL GROUPS : cat /etc/group
+
+    CHECK GROUPS ALL INFO : sudo cat /etc/gshadow
+
+    ADD GROUP ADMIN : sudo gpasswd -A UserName_1,UserName_N GroupName
+
+    ADD GROUP TO USER : sudo usermod -G GroupName UserName
+
+    APPEND USER TO GROUP : sudo usermod -a -G GroupName UserName
+
+    CHANGE MAIN GROUP OF USER : sudo usermod -g GroupName UserName
+
+
+GROUP ADMIN TASK : 
+
+    ADD NEW USER TO GROUP : gpasswd -a UserName GroupName
+
+    VIEW GROUP INFO : getent group GroupName
+
+    DELETE USER FROM GROUP : gpasswd -d UserName GroupName
+
+    SET GROUP PASSWORD : gpasswd GroupName
+
+
+ENTER A GROUP WITH GROUP PASSWORD : newgrp GroupName
+
+
+
+
+
+
