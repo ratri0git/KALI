@@ -81,6 +81,10 @@ APPENDIX :
     GIVE : +
     TAKE : -
 
+    SETUID : 2
+    SETGID : 4
+    STICKY BIT : 1
+
 
 CHANGE PERMISSIONS : 
     
@@ -140,10 +144,18 @@ GROUP ADMIN TASK :
     SET GROUP PASSWORD : gpasswd GroupName
 
 
-ENTER A GROUP WITH GROUP PASSWORD : newgrp GroupName
+ENTER A GROUP WITH GROUP PASSWORD AS TEMPORARY : newgrp GroupName
+
+ALLOW USER TO EXECUTE COMPILED FILE AS OWNER (SETUID) : chmod u+s Filename
+
+ALLOW USER TO CREATE FILE WITH GROUP ID (SETGID) : chmod g+s /Path/To/Folder/Group/
 
 
+STICKY BIT :
+
+    MAKE DIRECTORY OR FILE WRITE PROTECTED : sudo chmod o+t Path/To/Folder_OR_File
 
 
+ACCESS CONTROL LIST : 
 
-
+    

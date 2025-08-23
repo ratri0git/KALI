@@ -19,6 +19,8 @@ HELP :
 
     GET SHORT DESCRIPTION : whatis command
 
+    CHECK WHERE COMMAND IS STORED ; which command
+
 
 PRINT WORKING DIRECTORY :
 
