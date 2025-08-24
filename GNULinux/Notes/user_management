@@ -187,18 +187,3 @@ FILE ATTRIBUTES :
 
     MAKE WHOLE DIRECTORY APPEND ONLY : sudo chattr -R +a Path/To/Folder/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
