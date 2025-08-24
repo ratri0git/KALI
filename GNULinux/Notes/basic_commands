@@ -10,6 +10,8 @@ SHELL:
 
     POWEROFF SYSTEM : poweroff
 
+    DATE AND TIME: date
+
     
 HELP : 
 
