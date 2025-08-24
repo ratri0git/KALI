@@ -144,7 +144,7 @@ GROUP ADMIN TASK :
     SET GROUP PASSWORD : gpasswd GroupName
 
 
-ENTER A GROUP WITH GROUP PASSWORD AS TEMPORARY : newgrp GroupName
+ENTER A GROUP WITH GROUP PASSWORD AS TEMPORARY MAIN Group: newgrp GroupName
 
 ALLOW USER TO EXECUTE COMPILED FILE AS OWNER (SETUID) : chmod u+s Filename
 
@@ -156,6 +156,49 @@ STICKY BIT :
     MAKE DIRECTORY OR FILE WRITE PROTECTED : sudo chmod o+t Path/To/Folder_OR_File
 
 
-ACCESS CONTROL LIST : 
+ACCESS CONTROL LIST (+) : 
+
+    GET FILE ACL : getfacl /Path/To/Folder/File
+
+    SET FILE ACL FOR SPECIFIC GROUP : sudo setfacl -m g:GroupName:rwx /Path/To/Folder
+
+    SET FILE ACL FOR SPECIFIC USER : sudo setfacl -m u:UserName:rwx /Path/To/Folder
+
+    SET FILE ACL RECURSIVELY : sudo setfacl -mR g:GroupName:rwx /Path/To/Folder
+
+    SET FILE ACL DEFAULT FOR NEWLY ADDED FOLDER OR FILE OR USER : sudo setfacl -md g:GroupName:rwx /Path/To/Folder
+
+    REMOVE DEFAULT ACL PERMISSIONS : sudo setfacl -k /Path/To/Folder
+
+    REMOVE FILE ACL FOR SPECIFIC USER : suso facl -x u:UserName ath/To/Folder
+
+    REMOVE FILE ACL FOR ALL FILES : suso facl -Rb Path/To/Folder/
+
+
+FILE ATTRIBUTES : 
+
+    LIST FILE ATTRIBUTES : lsattr Path/To/File
+
+    MAKE FILE IMMUTABLE : sudo chattr +i Path/To/Fil
+
+    MAKE FILE APPEND ONLY : sudo chattr +a Path/To/File
+
+    MAKE WHOLE DIRECTORY IMMUTABLE : sudo chattr -R +i Path/To/Folder/
+
+    MAKE WHOLE DIRECTORY APPEND ONLY : sudo chattr -R +a Path/To/Folder/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
