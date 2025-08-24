@@ -1,8 +1,3 @@
-PIPE & TEE : 
-
-    OUTPUT OF ONE COMMAND INPUT FOR ANOTHER : command_1 | command_2  | command_3 
-
-    OUTPUT OF ONE PROCESS INPUT FOR MULTIPLE : command_1 | tee command_2 command_3
 
 
 ENVIRONMENT : 
@@ -38,13 +33,6 @@ JOIN AND SPLIT :
     SPLIT FILE INTO FILES WITH EACH N LINES : split -l N BigFile
 
 
-SORT : 
-
-    SORT BY CHARACTOR VALUE : sort Filename
-
-    SORT REVERSE BY CHARACTOR VALUE : sort -r Filename
-
-    SORT BY NUMERIC VALUE : sort -n Filename
 
 
 TRANSLATE : 
@@ -54,28 +42,7 @@ TRANSLATE :
     DELETE GIVEN CHARACTOR : tr -d given/charactor/set < Filename_OR_OtherInput
 
 
-UNIQUE : 
 
-    REMOVE DUPLICATE LINES : uniq Filename
-
-    GET NUMBER OF DUPLICATES OF LINES : uniq Filename
-
-    GET UNIQUE VALUES ONLY : uniq -u Filename
-
-    GET DUPLICATE VALUES ONLY : uniq -d Filename
-
-    OVERCOME NON ADJECENT DUPLICATES : sort Filename | uniq
-
-
-WORD LINE COUNT : 
-
-    NUMBER OF WORDS IN FILE : wc -w Filename
-
-    NUMBER OF LINES IN FILE : wc -l Filename
-
-    NUMBER OF BYTES IN FILE : wc -c Filename
-
-    ADD COUNT TO EACH LINE : nl Filename
 
 
 GREP :

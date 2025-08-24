@@ -21,6 +21,13 @@ STANDARD ERROR (2) :
     DISCARD ALL INPUTS : commands &> /dev/null
 
 
+PIPE & TEE : 
+
+    OUTPUT OF ONE COMMAND INPUT FOR ANOTHER : command_1 | command_2  | command_3 
+
+    OUTPUT OF ONE PROCESS INPUT FOR MULTIPLE : command_1 | tee command_2 command_3
+
+
 CAT : 
 
     READ FILES : cat file_1 file_2 file_N
@@ -51,6 +58,44 @@ HEAD & TAIL :
     SEE LIVE UPDATES AT ENDING OF FILE : tail -f Path/To/File
 
 
+WORD LINE COUNT : 
+
+    NUMBER OF WORDS IN FILE : wc -w Filename
+
+    NUMBER OF LINES IN FILE : wc -l Filename
+
+    NUMBER OF BYTES IN FILE : wc -c Filename
+
+    ADD COUNT TO EACH LINE : nl Filename
 
 
-    
+SORT : 
+
+    SORT BY CHARACTOR VALUE : sort Filename
+
+    SORT REVERSE BY CHARACTOR VALUE : sort -r Filename
+
+    SORT BY NUMERIC VALUE : sort -n Filename
+
+    SORT UNIQUE VALUES : sort -u Filename
+
+    SORT UNIQUE VALUES CASE INSESITIVE : sort -uf Filename
+
+    SORT BY COLUMNN Nth VALUES : sort -k2 Filename
+
+
+UNIQUE : 
+
+    REMOVE DUPLICATE LINES : uniq Filename
+
+    GET UNIQUE VALUES ONLY : uniq -u Filename
+
+    GET DUPLICATE VALUES ONLY : uniq -d Filename
+
+    GET DUPLICATE VALUES WITH DUPLICATES : uniq -D Filename
+
+    OVERCOME NON ADJECENT DUPLICATES : sort Filename | uniq
+
+
+
+

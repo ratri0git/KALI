@@ -1,0 +1,13 @@
+1 	16 	Abraham Lincoln 	6 ft 4 in 	193 cm 
+2 	36 	Lyndon B. Johnson 	6 ft 3 1â„2 in 	192 cm 
+3 	45 	Donald Trump 		6 ft 3 in 	191 cm
+4 	3 	Thomas Jefferson 	6 ft 2 1â„2 in 	189 cm 
+5 	1 	George Washington 	6 ft 2 in 	188 cm
+5       21 	Chester A. Arthur 	6 ft 2 in 	188 cm
+5       32 	Franklin D. Roosevelt 	6 ft 2 in 	188 cm
+5       41 	George H. W. Bush 	6 ft 2 in 	188 cm
+5       42 	Bill Clinton 		6 ft 2 in 	188 cm
+10 	7 	Andrew Jackson 		6 ft 1 in 	185 cm
+10      35 	John F. Kennedy 	6 ft 1 in 	185 cm 
+10      40 	Ronald Reagan 		6 ft 1 in 	185 cm 
+10      44 	Barack Obama 		6 ft 1 in 	185 cm 	
