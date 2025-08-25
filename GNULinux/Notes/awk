@@ -1,0 +1,28 @@
+PRINT CONTENTS OF FILE : awk '{print}' Filename
+
+GET DESIRED COLUMNS BY FIELD SAPARATOR : awk -F "saperator" '{print $N, $M}' Filename
+
+PRINT NUMBER OF FILEDS IN LINES : awk '{print NF}' Filename
+
+PRINT LAST FILED ELEMENT : awk '{print $NF}'
+
+PRINT ENTIRE LINES : awk '{print $0}' Filename
+
+PRINT IF NUMBER OF FIELD IS NUM : awk 'NF==NUM{print NF "match found"}' Filename
+
+PRINT LINES IF NtH FIELD IS SEARCHKEY : awk '$N=="SearchKey" {print $0}' Filename
+
+PRINT LINES AFTER REPLACING NtH FIELD WITH SEARCHKEY : awk '$N="SearchKey" {print $0}' Filename
+
+PRINT LINE IF NtH FIELD CONTAIN SEARCHKEY : awk '$N~"SearchKey" {print $0}' Filename
+
+PRINT LINE CONTAINING SEARCHPATTERN : awk /SearchPattern/ Filename
+
+PRINT ALL IN LOWER CASE : awk '{print tolower($0)}' Filename
+
+PRINT ALL IN UPPER CASE : awk '{print toupper($0)}' Filename
+
+PRINT NUMBER OF LINE OR RECORD READ TILL NOW : awk '{print NR }' Filename
+
+PRINT LINES FROM Nth TO LAST : awk 'NR>=N{print $0}' Filename
+
