@@ -101,6 +101,15 @@ FIND :
     FOLDER BY NAME IN DIRECTORY : find /Directory -type d -name Foldername
 
 
+WILD CARDS : 
+
+    GLOB ZERO OR MORE CHARACTORS : *
+    SINGLE OR NO CHARACTOR : ?
+    ANY ONE OR MORE FROM : []
+    FROM n TO m : {n..m}
+
+
+
 COPY : 
 
     COPY AND PASTE : cp Source/File/Path Destination/Path
