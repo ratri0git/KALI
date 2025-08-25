@@ -1,15 +1,10 @@
-1. Science is a method of exploring and understanding the world around us.  
-2. It has revolutionized human existence in profound ways.  
-3. Scientific research has eradicated diseases like smallpox.  
-4. Vaccines developed through science have saved millions of lives.  
-5. Medical technologies, such as MRI and CT scans, make diagnosis more accurate.  
-6. Science has increased human life expectancy globally.  
-7. Advances in agriculture have reduced hunger and improved nutrition.  
-8. Clean water and modern sanitation owe their existence to scientific knowledge.  
-9. Data science helps governments respond faster to epidemics.  
-10. Renewable energy research is helping to fight climate change.  
-11. Innovations in communication have connected people from all parts of the world.  
-12. Mobile phones and the internet are direct products of scientific progress.  
-13. Science powers efficient transportation systems like trains and airplanes.  
-14. It makes space exploration and satellite communications possible.  
-15. New materials science leads to safer, lighter, and stronger constructions.  
+-rw-rw-r-- 1 ratri0kali ratri0kali 3.6K Aug 25 16:40 basic_commands
+-rw-rw-r-- 1 ratri0kali ratri0kali 4.1K Aug 25 18:06 data_manipulation
+-rwxrw---- 1 ratri0kali ratri0kali 3.5K Aug 24 18:17 eassay.txt
+-rw-rw-r-- 1 ratri0kali ratri0kali 257K Aug 17 00:26 fakefile.png
+-rwxr-xr-- 1 ratri0kali ratri0kali    0 Aug 25 18:10 fakefile.txt
+-rw-rw-r-- 1 ratri0kali ratri0kali  187 Aug 24 18:54 gross.txt
+-rw-rw-r-- 1 ratri0kali ratri0kali  320 Aug 24 18:37 intermediate_commands
+-rw-rw-r-- 1 ratri0kali ratri0kali  614 Aug 24 19:14 presidents.txt
+-rw-rw-r-- 1 ratri0kali ratri0kali  386 Aug 25 18:06 text_fu
+-rw-rw-r-- 1 ratri0kali ratri0kali 4.2K Aug 24 17:15 user_management

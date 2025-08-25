@@ -4,19 +4,6 @@ ENVIRONMENT :
 
     VIEW ENVIRONMENT VARIABLES : env
 
-CUT : 
-    
-    Nth CHARACTOR FROM EACH LINE : cut -c N Filename
-
-    Nth PART BY FIELD SAPERATOR WITH DELIMITER : cut -f N -d "delimiter" Filename 
-
-    WITH RANGE : 
-
-        Nth TO Mth INDEX : cut -c N-M Filename
-
-        START TO Nth CHARACTOR : cut -c -N Filename
-
-        Nth CHARACTOR TO ENDING : cut -c N- Filename
 
 
 PASTE : 
@@ -34,12 +21,6 @@ JOIN AND SPLIT :
 
 
 
-
-TRANSLATE : 
-
-    CONVERT LOWER CASE TO UPPER CASE : tr a-z A-Z < Filename_OR_OtherInput
-
-    DELETE GIVEN CHARACTOR : tr -d given/charactor/set < Filename_OR_OtherInput
 
 
 
