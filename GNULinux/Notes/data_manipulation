@@ -81,7 +81,7 @@ SORT :
 
     SORT UNIQUE VALUES CASE INSESITIVE : sort -uf Filename
 
-    SORT BY COLUMNN Nth VALUES : sort -k2 Filename
+    SORT BY COLUMN Nth VALUES : sort -k2 Filename
 
 
 UNIQUE : 
