@@ -1,28 +1,78 @@
-PRINT CONTENTS OF FILE : awk '{print}' Filename
+SYNTAX : 
+    
+    awk -Options 'Pattern_OR_Condition {Action}' Filename 
+    Other_commands | awk -Options 'Pattern_OR_Condition {Action}' Filename 
 
-GET DESIRED COLUMNS BY FIELD SAPARATOR : awk -F "saperator" '{print $N, $M}' Filename
 
-PRINT NUMBER OF FILEDS IN LINES : awk '{print NF}' Filename
+FIELD OR COLUMN : 
 
-PRINT LAST FILED ELEMENT : awk '{print $NF}'
+    GET Nth AND Mth FIELD : awk '{print $N, $M}' Filename
 
-PRINT ENTIRE LINES : awk '{print $0}' Filename
+    GET ALL FIELDS : awk '{print $0}' Filename
 
-PRINT IF NUMBER OF FIELD IS NUM : awk 'NF==NUM{print NF "match found"}' Filename
+    GET LAST FIELD : awk '{print $NF}' Filename
 
-PRINT LINES IF NtH FIELD IS SEARCHKEY : awk '$N=="SearchKey" {print $0}' Filename
 
-PRINT LINES AFTER REPLACING NtH FIELD WITH SEARCHKEY : awk '$N="SearchKey" {print $0}' Filename
+ROW OR RECORD : 
 
-PRINT LINE IF NtH FIELD CONTAIN SEARCHKEY : awk '$N~"SearchKey" {print $0}' Filename
+    GET NtH LINE : awk 'NR==N {print $0}' Filename
 
-PRINT LINE CONTAINING SEARCHPATTERN : awk /SearchPattern/ Filename
+    GET RANGE OF LINES Nth TO Mth : awk 'NR==N,NR==M {print $0}' Filename
 
-PRINT ALL IN LOWER CASE : awk '{print tolower($0)}' Filename
+    PRINT LINE NUMBER BEFORE EACH LINE DATA : awk '{print NR, $0}' Filename
 
-PRINT ALL IN UPPER CASE : awk '{print toupper($0)}' Filename
+    GET LINE NUMBER OF EMPTY LINES : awk 'NF==0 {print NR }' Filename
 
-PRINT NUMBER OF LINE OR RECORD READ TILL NOW : awk '{print NR }' Filename
 
-PRINT LINES FROM Nth TO LAST : awk 'NR>=N{print $0}' Filename
+CSV AND DELIMITER : 
+
+    SINGLE DELIMITER : awk -F "delimiter"'{print $0}' Filename
+
+    MULTIPLE DELIMITER : awk -F[D1D2D3] "delimiter"'{print $0}' Filename
+
+
+SEARCH : 
+
+    GET ROWS CONTAINING A WORD : awk '/SearchWord/{print $0}' Filename
+
+    GET LINES CONTAINING THESE WORDS : awk '/Word1|Word2|Word3/{print $0}' Filename
+
+    IGNORE CASE SENSITIVE WHILE SEARCH : awk 'BEGIN{IGNORECASE=1} /Word/{print $0}' Filename
+
+    GET LINES WHOSE Nth COLUMN CONTAIN CHARACTOR X : awk '$N ~ /X/ {print $0}' Filename
+
+
+FILTER : 
+
+    GET LINES WITH Nth FIELD VALUES MORE THAN EQUAL TO NUM : awk '$NF>=NUM {print $0}' Filename
+
+
+SOME FUNCTIONS :  
+
+    REPLACE WORD1 WITH WORD2 AND PRINT :  awk '{gsub("word1","word2") ;print $0}' Filename
+
+    LENGTH OF ELEMENTS IN Nth FIELD : awk '{print length($N)}' Filename
+
+    LENGTH OF EACH LINE : awk '{print length($0)}' Filename
+
+    INDEX OF FIRST CHARACTOR OF SEARCHWORD : awk '{print index($0,"SearchWord")}'
+
+    CONVERT TO LOWER CASE : awk 'print tolower($0)' Filename
+
+    CONVERT TO UPPER CASE : awk 'print toupper($0)' Filename
+
+
+AWK SCRIPTING SYNTAX : 
+
+    awk
+        'BEGIN{start_actions}
+            Pattern_Condition{Action}
+        END{stop_actin}'
+    Filename
+
+
+AWK FILE : 
+
+    awk -F "delimiter" -f File.awk Filename
+
 

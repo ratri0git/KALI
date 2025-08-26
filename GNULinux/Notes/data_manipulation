@@ -180,6 +180,18 @@ CUT :
 
         OUTPUT DELIMITER FOR MULTIPLE FIELDS : cut -c -M,A-K,P- --output-delimiter "delimiter" Filename
 
+        
+PASTE : 
 
+    MERGE LINES IN FILE : paste -d 'delimiter' -s Filename
     
+
+JOIN AND SPLIT : 
+
+    JOIN CONTENTS OF TWO SORTED FILES : join File_1 File_2
+
+    JOIN CONTENTS OF TWO UNSORTED FILES WITH MATCHING FIELD : join -1 Nth -2 Mth File_1 File_2
+
+    SPLIT FILE INTO FILES WITH EACH N LINES : split -l N BigFile
+
         
