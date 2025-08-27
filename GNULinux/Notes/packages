@@ -1,0 +1,39 @@
+GZIP : 
+
+    COMPRESS FILES : gzip File_1 File_N
+
+    READ GZIP FILE : zcat Filename
+
+    GREP ON GZIP FILE : zgrep Filename
+
+    DECOMPRESS GZIP FILE : 
+    
+        gzip -d Filename
+        gunzip File_1 File_N
+
+    ZIP WHILE KEEPING ORIGINAL UNZIPPED : gzip -k Filename
+
+    COMPRESSION to LEVEL (1 TO 9) Nth : gzip -vN Filename
+
+    LIST INFO OF ZIP FILE : gzip -l Filename
+
+    GZIP ALL FILES IN A DIRECTORY : gzip -r Directory/Path
+
+    RENAME OR APPEND WHILE ZIPPING FILE : gzip -c Filename >> NewFileName
+
+
+TAR : 
+
+    CREATE TAR FILE : 
+        
+        tar --create --file="Tar_File_name.tar" File_1 File_2 File_N Folder
+        tar -cvf Tar_File_name.tar File_1 File_2 File_N Folder
+
+    LIST TAR FILE CONTENTS : 
+
+        tar --list --file="Tar_File_name.tar" 
+        tar -tf Tar_File_name.tar
+        tar --list -f Tar_File_name.tar
+        tar -tvf Tar_File_name.tar
+
+    EXTRACT TAR FILE : tar -xf Tar_File_name.tar
