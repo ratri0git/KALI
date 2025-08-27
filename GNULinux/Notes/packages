@@ -4,7 +4,7 @@ GZIP :
 
     READ GZIP FILE : zcat Filename
 
-    GREP ON GZIP FILE : zgrep Filename
+    GREP ON GZIP FILE : zgrep "SearchWord" Filename
 
     DECOMPRESS GZIP FILE : 
     
@@ -37,3 +37,87 @@ TAR :
         tar -tvf Tar_File_name.tar
 
     EXTRACT TAR FILE : tar -xf Tar_File_name.tar
+
+    EXTRACT SPECIFIC FILE FROM TAR FILE : tar -xf Tar_File_name.tar Filename
+
+    EXTRACT CONTENT TO NEW LOCATION : tar -xf Tar_File_name.tar -C /New/Location/Path
+
+    ADD NEW FILE OR FOLDER TO TAR FILE : tar -uf Tar_File_name.tar NewFile_OR_Folder
+
+    ADD SAME FILE MORE THAN ONCE : tar -rf Tar_File_name.tar File_OR_Folder
+
+    EXTRACT Nth OCCURRENCE OF FILE : tar -rf Tar_File_name.tar --occurrence=N File_OR_Folder
+
+
+BZIP2 : 
+
+    ZIP A FILE : bzi2 Filename
+
+    READ BZIP2 FILE : bzcat Filename
+
+    GREP BZIP2 FILE : bzgrep "SearchWord" Filename
+
+    DECOMPRESS : 
+        
+        bzip2 -d Filename
+        bunzip2 Filename
+
+    
+XZ : 
+
+    ZIP A FILE : xz Filename
+
+    READ BZIP2 FILE : xzcat Filename
+
+    GREP BZIP2 FILE : xzgrep "SearchWord" Filename
+
+    DECOMPRESS : 
+        
+        xz -d Filename
+        unxz Filename
+
+
+CREATE ZIP TAR FILE : tar -czf Filename.tar.gz File_1 Folder_1
+
+CREATE BZIP2 TAR FILE : tar -cjf Filename.tar.bz2 File_1 Folder_1
+
+CREATE XZ TAR FILE : tar -cJf Filename.tar.xz File_1 Folder_1
+
+CHECK COMPRESSION TYPE : file Filename
+
+EXTRACT UNKNOWN EXTENSION FILE : tar -xf Filename
+
+GET TIME TAKEN TO COMPRESS : time tar -czf Filename.tar.gz File_1 Folder_1
+
+
+ZIP : 
+
+    ZIP FILES : zip ZipName.zip File_1 File_N
+
+    ZIP FOLDER AND CONTEENTS : zip -r ZipName.zip  File_1 Folder_1
+
+    LIST CONTENTS OF ZIP FILE : 
+        
+        zipinfo ZipName.zip 
+        zip -sf ZipName.zip
+        unzip -l ZipName.zip
+        less ZipName.zip
+
+    EXTRACT ZIP FILES : 
+        
+        unzip Filename.zip
+        unzip filename.zip -d /New/Path/Folder
+
+
+7ZIP : 
+
+    ZIP FILES : 7z a Filename.7z File_1 File_N Folder
+
+    LIST CONTENTS OF 7Z : 7z l Filename.7z 
+
+    EXTRACT 7Z : 
+
+        7z x Filename.7z
+        
+
+
