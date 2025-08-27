@@ -12,7 +12,7 @@ SHELL:
 
     DATE AND TIME: date
 
-    DRY RUN COMMANDS TO SEE EXPECTED OUTCOME : commands --dry-run
+    DRY RUN COMMANDS TO SEE EXPECTED OUTCOME : commands --dry-run OR -n
 
     
 HELP : 

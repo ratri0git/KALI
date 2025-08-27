@@ -1,15 +1,35 @@
-SYNC FILE : rsync /Source/Path/Filename /Destination/Path
+PSEUDO SYNC:
 
-SYNC ENTIRE DIRECTORY : rsync /Source/Path/Folder /Destination/Path/
+    SYNC FILE : rsync -v /Source/Path/Filename /Destination/Path
 
-SYNC DIRECTORY SUBDIRECTORIES FILES : rsync -r /Source/Path/Folder/* /Destination/Path
+    SYNC ENTIRE DIRECTORY : rsync /Source/Path/Folder /Destination/Path/
 
-SYNC DIRECTORY SUBDIRECTORIES FILES HIDDEN FILES : rsync -r /Source/Path/Folder/ /Destination/Path
+    SYNC DIRECTORY SUBDIRECTORIES FILES : rsync -r /Source/Path/Folder/* /Destination/Path
+
+    SYNC DIRECTORY SUBDIRECTORIES FILES HIDDEN FILES : rsync -r /Source/Path/Folder/ /Destination/Path
+
+    DELETE THINGS FROM DESTINATION NOT IN SOURCE : rsync -a /Source/Path/Folder/ /Destination/Path --delete
 
 
-FILE INTEGRETY : 
+SYNC ONLY UNCOMMON THINGS : 
 
-    
+   VIA CHECKSUMS : rsync -rc Source/Path/Folder/ /Destination/Path
+
+   VIA TIMESTAMPS CHECK : rsync -a Source/Path/Folder/ /Destination/Path
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
