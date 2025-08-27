@@ -1,0 +1,20 @@
+SYNC FILE : rsync /Source/Path/Filename /Destination/Path
+
+SYNC ENTIRE DIRECTORY : rsync /Source/Path/Folder /Destination/Path/
+
+SYNC DIRECTORY SUBDIRECTORIES FILES : rsync -r /Source/Path/Folder/* /Destination/Path
+
+SYNC DIRECTORY SUBDIRECTORIES FILES HIDDEN FILES : rsync -r /Source/Path/Folder/ /Destination/Path
+
+
+FILE INTEGRETY : 
+
+    
+
+
+
+
+
+
+
+
