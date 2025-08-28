@@ -20,6 +20,8 @@ STANDARD ERROR (2) :
 
     DISCARD ALL INPUTS : commands &> /dev/null
 
+    REDIRECT MESSAGES TO DESIRED ACTIVE TERMINAL : commands > /dev/pts/0
+
 
 PIPE & TEE : 
 

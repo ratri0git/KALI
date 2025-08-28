@@ -1,0 +1,55 @@
+SET TO OPEN NEW TERMINALS IN CURRENT ACTIVE SCREEN :export DISPLAY=:0
+
+OPEN NEW TERMINAL WINDOW : gnome-terminal
+
+
+CRON : 
+
+    LIST SCHEDULED CRON JOBS : crontab -l
+
+    SCHEDULE CRON JOBS : crontab -e
+
+    DENY USER TO EDIT CRON FILE : sudo vi /etc/cron.deny AND add username
+
+    DELETE ALL CRON JOBS : crontab -r
+
+
+ANACRON : 
+
+    CHECK BUILT IN CRON FOLDERS : ls /etc/cron*
+
+    CREATE OR DELETE OR EDIT ANACRON FILE : cd /etc/cron.daily/Filename
+
+    CREATE DAILY ANANCRON JOB (ONLY ROOT USER): vi /etc/anacron.daily/Filename
+
+    CREATE WEEKLY ANANCRON JOB (ONLY ROOT USER): vi /etc/anacron.weekly/Filename
+
+    CREATE MONTHLY ANANCRON JOB (ONLY ROOT USER): vi /etc/anacron.monthly/Filename
+
+    CREATE YEARLY ANANCRON JOB (ONLY ROOT USER): vi /etc/anacron.yearly/Filename
+
+    CHECK ANACRON DEFAULT TIMINGS : cat /etc/crontab
+
+    CHECK OR CHANGE LAST TIMINGS OF ANACRON JOB RUN : cd /var/spool/anacron and sudo vi Filename 
+
+    SEE ANACRON CONFIGURATION FILE : cat /etc/anacrontab
+
+
+AT : 
+
+    CHECK SCHEDULED AT JOBS : atq
+
+    RUN AFTER N MINUTES FROM NOW : at now +5 minutes
+
+    RUN SCRIPT : at -f /Path/To/Filename HH:MM 
+
+    DELETE AT JOB : atrm JobID
+
+
+SYSTEMD : 
+
+    
+
+
+
+
