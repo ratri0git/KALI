@@ -18,6 +18,7 @@ SYNC ONLY UNCOMMON THINGS :
    VIA TIMESTAMPS CHECK : rsync -a Source/Path/Folder/ /Destination/Path
 
 
+SSH CONNECT : ssh UserName@IP 
 
 
 
