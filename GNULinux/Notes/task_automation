@@ -46,6 +46,22 @@ AT :
     DELETE AT JOB : atrm JobID
 
 
+SYSTEMD TIMER : 
+
+    CREATE A SERVICE IN : sudo vi /etc/systemd/system/YourServiceName.service
+
+    RELOAD SERVICE TO SYSTEMD : sudo systemctl daemon-reload
+
+    RUN SERVICE : sudo systemctl start ServiceName.service
+
+    STOP SERVICE : sudo systemctl stop ServiceName.service
+
+    CREATE SYSTEMD TIMER : sudo vi /etc/systemd/system/YourServiceName.timer
+
+    RUN TIMER : sudo systemctl start ServiceName.timer
+
+    LIST OF ALL TIMERS :  systemctl list-timers
+
 
 
 
