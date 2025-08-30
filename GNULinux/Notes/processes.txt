@@ -1,3 +1,4 @@
+
 PS :
 
     PRINT SNAPSHOT OF PROCESSES : ps
@@ -80,15 +81,6 @@ FOREGROUND AND BACKGROUND :
 NOHUP : 
 
     RUN JOB IN BACKGROUND AND DIRECT OUTPUT TO NOHUP : nohup Commnads
-
-
-
-
-
-
-
-
-
 
 
 
