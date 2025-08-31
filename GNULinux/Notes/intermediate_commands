@@ -45,7 +45,24 @@ ALIAS :
     REMOVE ALIAS : unalias NickName
 
 
+SHOW ALL ENVIRONMENT VARIABLES AND FUNCTIONS FOR CURRENT SHELL : set
 
-    
+
+INTERACTIVE SHELLS : 
+
+    INTERACTIVE NO LOGIN SHELL == ALREADY LOGGED IN USER SHELL : .bashrc file
+
+    INTERACTIVE LOGIN SHELL == SSH OR SIMILAR : .profile file
+
+    GET SHELL TYPE : echo $0 OR echo $SHELL
+
+    UPDATE FILE : source .bashrc OR . .profile
+
+
+PATH : 
+
+    SEE PATH ENVIRONMENT VARIABLE : echo $PATH
+
+    ADD PATH VALUE : PATH="$PATH:/Path/To/Script/File "
     
 

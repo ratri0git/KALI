@@ -178,14 +178,26 @@ LINKING :
 
 HISTORY : 
 
-    LIST ALL PREVIOUSLY USED COMMANDS : history
+    LIST ALL PREVIOUSLY USED COMMANDS : history OR cat .bash_history
+
+    CLEAR HISTORY : history -c
 
     RUN LAST COMMAND : !!
+
+    RUN Nth COMMAND IN HISTORY : !N
 
     SEARCH COMMAND IN HISTORY : ctrl+R and part of command
 
     AUTOMCOMPLETE : command + TAB
 
     CLEAR TERMINAL : clear
+
+
+CUSTOM PROMPT : 
+
+    CHECK VALUE OF PS1 : echo $PS1
+
+    CHANGE VALUE OF PS1 : PS1="New_value_Expression"
+
 
 
