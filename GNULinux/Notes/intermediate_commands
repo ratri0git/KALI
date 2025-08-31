@@ -26,5 +26,26 @@ XARGS :
 
         MODIFY PERMISSIONS FOR SPECIFIC FILES : echo "Filename" | xargs -I {} chmod rwx {}
 
-        
+
+ENVIRONMENT VARIABLES : 
+
+    LIST ALL ENVIRONMENT VARIABLES : env
+
+    GET VALUE OF ENVIRONMENT VARIABLE : echo $VARIABLE_NAME
+
+    CREATE A ENVIRONMENT VARIABLE : Variable_Name='Value'
+
+
+ALIAS : 
+
+    CREATE ALIAS : alias NickName='Command_1; Command_2; Command_N'
+
+    LIST ALIASES : alias
+
+    REMOVE ALIAS : unalias NickName
+
+
+
+    
+    
 
