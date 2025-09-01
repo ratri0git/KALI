@@ -1,0 +1,31 @@
+DF : 
+
+    SEE DISK FILE SYSTEM : df
+
+    SHOW TOTAL IN LAST LINE : df --total OR du -c
+
+    EXCLUDE TMPFS FILE SYSTEM : df -x tmpfs
+
+    SEE INODES WITH FILE SYSTEM : df -i
+
+
+DU : 
+
+    SEE SUBDIRECTORIES AND DIRECTORY USAGE : du /Path/To/Files/Folders
+
+    SEE ALL DIRECTORIES AND FILES USAGE : du -a
+
+    SUMMARIZES USAGE BY DIRECTORY : du -s
+
+    USE NCDU : ncdu
+
+
+DD : 
+
+    COPY ONE FILE TO OTHER : dd if=/Path/inputfile of=/Path/outputfile
+
+    COPY EACH BLOCKSIZE AT A TIME : dd if=/Path/inputfile of=/Path/outputfile bs=N
+
+
+
+
