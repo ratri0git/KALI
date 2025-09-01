@@ -1,0 +1,78 @@
+LIST FOLDERS AND FILES : ls
+
+CREATE DIRECTORY : mkdir Folder_Name
+
+CHANGE DIRECTORY : cd /Path/To/Folder
+
+PRINT WORKING DIRECTORY : pwd
+
+REMOVE EMPTY DIRECTORY : rmdir Folder_Name
+
+DELETE REMOVE FILES AND DIRECTORY : rm /Path/File OR rm -r /Path/Folder/
+
+COPY FILE OR FOLDER : cp /Source/Path /Destination/Path
+
+RENAME OR MOVE FILE FOLDER : mv /Source/Path /New_name-OR_Path/
+
+CREATE EMPTY FILE : touch FileName
+
+READ A FILE : cat FileName_1 FileName_2
+
+READ BIG FILE PAGE WISE : less FileName
+
+SEARCH SPECIFIC PATTERN IN FILE : grep KeyPattern FileName
+
+SEARCH FILES IN DIRECTORY HEIRARCHY BY NAME : find /Path/To/Search -name FileName
+
+DISPLAY DISK SPACE USAGE : df
+
+DISPLAY DISK UTILIZATION : du /Path/Folder/File
+
+DISPLAY RAM INFO : free
+
+DISPLAY RUNNING PROCESSES AND SYSTEM RESOURCE USAGE : top
+
+SHOW PROCESSES RUNNING : ps
+
+TERMINATE PROCESS : kill PID
+
+EDIT FILES : nano /Path/Filename
+
+DISPLAY FIRST N LINES OF FILE : head -n N Filename
+
+DISPLAY LAST N LINES OF FILE : tail -n N Filename
+
+SORT LINES IN FILE : sort Filename
+
+REPORT OR OMIT DULPCATES : sort Filename | uniq
+
+COMPARE FILES : diff File_1 File_2
+
+CHECK PREVIOUSLY USED COMMANDS : history
+
+CLEAR TERMINAL : clear OR ctrl l
+
+MANUAL FOR COMMANDS : man grep
+
+DISPLAY OR PRINT SOMETHING : echo "Something"
+
+REDIRECT SOMETHING IN FILE : echo "Something" > Filename
+
+CHECK DATE AND TIME : date
+
+DOWNLOAD FROM INTERNET : wget Download_Link
+
+SENDING REQUEST AND GETTING RESULT ON API : curl API_link
+
+ZIP A FILE : zip NewName.zip Filename
+
+UNZIP A FILE : unzip NewName.zip
+
+COMPESS FILES OR FOLDERS : tar -cvf NewName.tar File_1 Folder_N/*
+
+
+
+
+
+
+
