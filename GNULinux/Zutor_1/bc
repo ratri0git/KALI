@@ -1,0 +1,59 @@
+
+COPY : 
+
+    COPY AND PASTE : cp Source/File/Path Destination/Path
+
+    FILES ENDING/STARTING/CONTAINING WITH : cp Path/To/File/*KeyWord OR KeyWord* OR *KeyWord* Destination/Path
+
+    FILE NAME CONTAINING UNKNOWN CHARACTOR : cp Path/To/File/Known?Name Destination/Path
+
+    FILE NAME INCLUDE OR EXCLUDE KNOWN CHARACTORS : cp Path/To/File/Known[a1b2c3]Name Destination/Path
+
+    RECURSIVELY COPY CONTENTS WITHIN DIRECTORY : cp -r Directory/Path/ Destination/Path
+
+    INTERACTIVE IN CASE OF OVER WRITING : cp -i Path/To/File/ Destination/Path
+
+
+MOVE  : 
+
+    RENAME OR CUT AND PASTE : mv Source/File_OR_Folder/Path Destination/Path
+
+    GIVE INFO WHAT IS HAPPENING : mv -v Source/File_OR_Folder/Path Destination/Path
+
+    PREVENT OVER WRITING : mv -n Source/File_OR_Folder/Path Destination/Path
+
+    CREATE BACKUP IN CASE OF OVER WRITING : mv -b Source/File_OR_Folder/Path Destination/Path
+
+
+
+
+ALIAS :
+
+    CREATE ALIAS : alias nickname='commands'
+
+    CREATE PERMANENT ALIAS : go to ~/.bashrc and add above line
+
+    REMOVE ALIAS : unalias nickname
+
+
+LINKING : 
+
+    CHECK LINKS INODE NUMBER : ls -i
+
+    CREATE HARD LINK : ln /Path/To/File LinkName
+
+    CREATE SOFT LINK : ln -s /Path/To/File LinkName
+
+    REMOVE LINK : unlink LinkName
+
+
+
+
+CUSTOM PROMPT : 
+
+    CHECK VALUE OF PS1 : echo $PS1
+
+    CHANGE VALUE OF PS1 : PS1="New_value_Expression"
+
+
+

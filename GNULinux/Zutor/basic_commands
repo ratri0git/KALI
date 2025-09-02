@@ -2,6 +2,8 @@ SHELL:
 
     COMMAND -OPTIONS ARGUMENTS : echo "Hello World !"
 
+    CLEAR TERMINAL : clear
+
     GET USERNAME : whoami
 
     EXIT FROM SHELL : exit
@@ -12,7 +14,7 @@ SHELL:
 
     DATE AND TIME: date
 
-    DRY RUN SCRIPTS TO SEE EXPECTED OUTCOME : commands --dry-run OR -n
+    DRY RUN SCRIPTS TO SEE EXPECTED OUTCOME : Scripts_OR_Commands --dry-run OR -n
 
     
 HELP : 
@@ -79,7 +81,7 @@ TOUCH :
 
 FILE :
 
-    DESCRIPTION OF FILE CONTENTS : file Filename.extension
+    DESCRIPTION OF FILE CONTENTS : file -Options Arguments Filename.extension
 
 
 MAKE DIRECTORY : 
@@ -93,49 +95,12 @@ EDITORS :
     
     OPEN NANO : nano Filename
 
-    OPEN VIM : vim Filename
-
     
 FIND : 
 
     FILE BY NAME IN DIRECTORY : find /Directory -name Filename
 
     FOLDER BY NAME IN DIRECTORY : find /Directory -type d -name Foldername
-
-
-WILD CARDS : 
-
-    GLOB ZERO OR MORE CHARACTORS : *
-    SINGLE OR NO CHARACTOR : ?
-    ANY ONE OR MORE FROM : []
-    FROM n TO m : {n..m}
-
-
-
-COPY : 
-
-    COPY AND PASTE : cp Source/File/Path Destination/Path
-
-    FILES ENDING/STARTING/CONTAINING WITH : cp Path/To/File/*KeyWord OR KeyWord* OR *KeyWord* Destination/Path
-
-    FILE NAME CONTAINING UNKNOWN CHARACTOR : cp Path/To/File/Known?Name Destination/Path
-
-    FILE NAME INCLUDE OR EXCLUDE KNOWN CHARACTORS : cp Path/To/File/Known[a1b2c3]Name Destination/Path
-
-    RECURSIVELY COPY CONTENTS WITHIN DIRECTORY : cp -r Directory/Path/ Destination/Path
-
-    INTERACTIVE IN CASE OF OVER WRITING : cp -i Path/To/File/ Destination/Path
-
-
-MOVE  : 
-
-    RENAME OR CUT AND PASTE : mv Source/File_OR_Folder/Path Destination/Path
-
-    GIVE INFO WHAT IS HAPPENING : mv -v Source/File_OR_Folder/Path Destination/Path
-
-    PREVENT OVER WRITING : mv -n Source/File_OR_Folder/Path Destination/Path
-
-    CREATE BACKUP IN CASE OF OVER WRITING : mv -b Source/File_OR_Folder/Path Destination/Path
 
 
 REMOVE : 
@@ -156,26 +121,6 @@ REMOVE :
         rm -- Filename
 
 
-ALIAS :
-
-    CREATE ALIAS : alias nickname='commands'
-
-    CREATE PERMANENT ALIAS : go to ~/.bashrc and add above line
-
-    REMOVE ALIAS : unalias nickname
-
-
-LINKING : 
-
-    CHECK LINKS INODE NUMBER : ls -i
-
-    CREATE HARD LINK : ln /Path/To/File LinkName
-
-    CREATE SOFT LINK : ln -s /Path/To/File LinkName
-
-    REMOVE LINK : unlink LinkName
-
-
 HISTORY : 
 
     LIST ALL PREVIOUSLY USED COMMANDS : history OR cat .bash_history
@@ -190,14 +135,5 @@ HISTORY :
 
     AUTOMCOMPLETE : command + TAB
 
-    CLEAR TERMINAL : clear
-
-
-CUSTOM PROMPT : 
-
-    CHECK VALUE OF PS1 : echo $PS1
-
-    CHANGE VALUE OF PS1 : PS1="New_value_Expression"
-
-
+    
 
