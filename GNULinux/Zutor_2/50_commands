@@ -70,9 +70,43 @@ UNZIP A FILE : unzip NewName.zip
 
 COMPESS FILES OR FOLDERS : tar -cvf NewName.tar File_1 Folder_N/*
 
+DECOMPRESS FILES AND FOLDERS : tar -xvf NewName.tar
 
+PRINT ENVIRONMENT VARIABLES : env
 
+PRINT VALUE OF ENVIRONMENT VARIABLES : echo $VARIABLE_NAME
 
+SET ENVIRONMENT VARIABLES : export VARIABLE_NAME=/Path/To/Value
 
+CHEKC CONNECTIVITY TO SITE : ping Site_Link
 
+EXECUTE COMMANDS WITH SUPER USER PREVILAGE : sudo Commands
+
+CHANGE FILE PERMISSIONS : chmod u=rwx,g=rwx,o=rwx /Path/To/Folder/File
+
+CHANGE FILE OWNERSHIP : sudo chown UserName /Path/Filename
+
+CHECK IP ADDRESS OF SERVER : ifconfig
+
+SECURELY CONNECT TO REMOVE SERVER : ssh UserName@IP
+
+SECURELY COPY FILES BETWEEN SERVERS : scp /Source/Path/ USerName@IP:/Destination/path/
+
+CUT SPECIFIC CHARACTORS FROM N TO M INDEX FROM EACH LINE : cut -c N-M Filename
+
+CUT SPECIFIC Nth COLUMN IN A FILE COMMA DELIMITER: awk -F, {print $N }'
+
+SUBSTITUTE A WORD WITH ANOTHER : sed 's/OldWord/NewWord/g' Filename
+
+CREATE SHORTCUT OF COMMANDS : alias NickName='Commands'
+
+SHOW SYSTEM INFO : uname
+
+SHOW CPU INFO : lscpu
+
+FILE SYSTEM INFO : lsblk
+
+CHECK LOGS UNDER : cd /var/log
+
+CHECK START STOP STATUS OF SERVICE : sudo systemctl status ServiceName
 
