@@ -1,0 +1,24 @@
+SSH : SECURE SHELL
+
+    INSTALL : 
+
+        sudo apt install openssh-server
+    
+    CONNECT : ssh UserName@IP_Address
+
+
+GRAPHICAL TOOLS : 
+
+    PUTTY TERMINAL : 
+    WINSCP :
+
+
+SCP : SECURE COPY PROTOCOL
+
+    SEND COPIED FILES : scp /Current/Path/File UserName@IP_Address:/Remote/Permissible/Path/
+
+    RECIEVE COPIED FILE : scp UserName@IP_Address:/Remote/Permissible/Path/FileName
+
+
+
+
