@@ -1,3 +1,8 @@
+STANDARD IN (0) :
+    
+    REDIRECT INPUT TO COMMAND : command < Filename
+
+
 STANDARD OUT (1) : 
 
     CREATE EMPTY FILE : > Filename
@@ -5,11 +10,6 @@ STANDARD OUT (1) :
     OVERWRITE WITH REDIRECTION : echo New Message > Filename
 
     APPEND AT ENDING OF FILE WITH REDIRECTION : echo New Message >> Filename
-
-
-STANDARD IN (0) :
-    
-    REDIRECT INPUT TO COMMAND : command < Filename
 
 
 STANDARD ERROR (2) : 

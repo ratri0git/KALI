@@ -1,0 +1,11 @@
+INSTALL : 
+
+    sudo apt install putty
+
+
+OPEN : 
+
+    TYPE : putty
+
+    
+

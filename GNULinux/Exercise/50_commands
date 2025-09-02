@@ -86,7 +86,7 @@ CHANGE FILE PERMISSIONS : chmod u=rwx,g=rwx,o=rwx /Path/To/Folder/File
 
 CHANGE FILE OWNERSHIP : sudo chown UserName /Path/Filename
 
-CHECK IP ADDRESS OF SERVER : ifconfig
+CHECK IP ADDRESS OF SERVER : ifconfig OR ip addr
 
 SECURELY CONNECT TO REMOVE SERVER : ssh UserName@IP
 
