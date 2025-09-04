@@ -1,0 +1,96 @@
+VIEW FILE CONTENT PAGE WISE : more FileName
+
+SPLIT FILE INTO FILES BY N LINES IN EACH : split -l N FileName
+
+SEARCH MULTIPLE MATCHING WORDS : egrep "Word_1|Word_2|Word_N" FileName
+
+SHUFFLE FILE CONTENT : shuf FileName 
+
+COUNT NUMBE ROF LINES IN FILE : wc -l FileName
+
+COMPARE TWO FILES : cmp File_1 File_2
+
+WHAT IS DIFFERENCE IN TWO FILES : diff File_1 File_2 
+
+FIND A FILE IN LINUX : updatedb AND_THEN locate FileName
+
+USE OF CALCULATOR : bc
+
+DISPLAY CALENDER : cal
+
+UPTIME AND USERS LOGGED IN : uptime
+
+RECORD TERMINAL ACTIVITY : script AND_THEN ctrl d
+
+COMPRESS FILE KEEPING ORIGINAL : gzip -k FileName
+
+DECOMPRESS FILE : gunzip Filename.gz
+
+COMPRESS FOLDER OR FIELS : tar -czf NewName.tar.gz File_1 Folder_N
+
+DECOMPRESS TAR FILE : tar -xzf NewName.tar.gz 
+
+ZIP MULTIPLE FILES : zip  File_1 File_N
+
+LIST ALL SERVICES : systemctl list-units --type=service --all
+
+PRINT ENVIRONMENT VARIABLES : printenv 
+
+ADD NEW ENVIRONMENT VARIABLES : export VARIABLE_NAME=/Path/To/Value/
+
+PRINT SPECIFIC Nth AND Mth COLUMN IN CSV FILE : awk -F , '{print $N, $M}' Filename
+
+GET RANGE OF CHARACTORS OF EACH LINE IN FILE : cut -cM-N Filename
+
+GET SPECIFC LINE FROM FILE : sed -n 'Np' Filename
+
+REPLACE A SPECIFC WORD : sed 's/Old_word/New_word/g' Filename
+
+CONVERT ALL LOWER TO UPPER CASE : tr [:lower:] [:upper:] < Filename
+
+MAKE FILE OF DESIRED SIZE OF X MB : truncate -s XM Filename
+
+PRINT VERTICALLY EACH LINE WIDTH N BITS : echo "Something" | fold -wN
+
+CHANGE OWNER OF FILE : chown NewOwner FileName
+
+CHANGE GROUP OF FILE : chgrp NewGroup Filename 
+
+CHECK RAM INFO : free
+
+CHECK CPU UTILIZATION : top
+
+CHECK DISK UTILIZATION : du /Path/To/
+
+CHECK FILE SYSTEM : df
+
+CHECK HOSTNAME : hostname
+
+CHECK CPU CORE THREAD INFO : lscpu
+
+CHECK ARCHITECTURE : arch 
+
+CHECK PARTITIONS AND DEVICES : lsblk
+
+CHECK OS NAME : uname -a
+
+CHECK IF PROCESS RUNNING : ps -ef | grep "Process Name"
+
+GET PID OF PROCESS : pgrep ProcessName
+
+STOP A PROCESS : sudo kill -9 PID
+
+KILL A PROCESS : pkill ProcessName
+
+LIST CURRENT JOBS : jobs
+
+RESUME JOB IN BACKGROUND OR FOREGROUND : bg OR fg
+
+RUN SCRIPT IN BACKGROUND : nohup /Path/ScriptName
+
+CHECK IF PORT IP OPEN IN REMOTE SERVER : telnet IP PORT
+
+CHECK ALL HUBS IN NETWORK PATH : traceroute Web_Link
+
+
+
