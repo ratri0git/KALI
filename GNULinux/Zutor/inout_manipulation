@@ -14,11 +14,11 @@ STANDARD OUT (1) :
 
 STANDARD ERROR (2) : 
 
-    REDIRECT ERROR MESSAGES TO FILE : commands 2> Filename
+    REDIRECT ERROR MESSAGES TO FILE : commands 2>> Filename
 
-    REDIRECT BOTH ERROR AND OUTPUT : commands &> Filename
+    REDIRECT BOTH ERROR AND OUTPUT : commands &>> Filename
 
-    DISCARD ALL INPUTS : commands &> /dev/null
+    DISCARD ALL OUTPUTS : commands &> /dev/null
 
     REDIRECT MESSAGES TO DESIRED ACTIVE TERMINAL : commands > /dev/pts/0
 
@@ -83,7 +83,7 @@ CUT :
         
 PASTE : 
 
-    MERGE LINES IN FILE : paste -d 'delimiter' -s Filename
+    MERGE LINES IN A FILE : paste -d 'delimiter' -s Filename
     
 
 JOIN AND SPLIT : 
