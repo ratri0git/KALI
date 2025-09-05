@@ -1,0 +1,85 @@
+STANDARD IN (0) :
+    
+    REDIRECT INPUT TO COMMAND : command < Filename
+
+
+STANDARD OUT (1) : 
+
+    CREATE EMPTY FILE : > Filename
+
+    OVERWRITE WITH REDIRECTION : echo New Message > Filename
+
+    APPEND AT ENDING OF FILE WITH REDIRECTION : echo New Message >> Filename
+
+
+STANDARD ERROR (2) : 
+
+    REDIRECT ERROR MESSAGES TO FILE : commands 2> Filename
+
+    REDIRECT BOTH ERROR AND OUTPUT : commands &> Filename
+
+    DISCARD ALL INPUTS : commands &> /dev/null
+
+    REDIRECT MESSAGES TO DESIRED ACTIVE TERMINAL : commands > /dev/pts/0
+
+
+PIPE & TEE : 
+
+    OUTPUT OF ONE COMMAND INPUT FOR ANOTHER : command_1 | command_2  | command_3 
+
+    OUTPUT OF ONE PROCESS INPUT FOR MULTIPLE : command_1 | tee command_2 Filename
+
+
+CAT : 
+
+    READ FILES : cat file_1 file_2 file_N
+    
+    ADD LINE NUMBER : cat -n Filename
+
+
+MORE : 
+
+    READ FILE IN PARTED MANNER : more Filename
+
+
+LESS :
+
+    READ FILE IN PAGED MANNER : less Path/To/File
+
+    QUIT LESS MODE : q
+
+    SEARCH IN LESS MODE : /KeyWord
+
+    
+HEAD & TAIL : 
+
+    SEE FIRST N LINES IN FILE : head -n N Path/To/File
+
+    SEE LAST N LINES IN FILE : tail -n N Path/To/File
+
+    SEE LIVE UPDATES AT ENDING OF FILE : tail -f Path/To/File
+
+
+WORD LINE COUNT : 
+
+    NUMBER OF WORDS IN FILE : wc -w Filename
+
+    NUMBER OF LINES IN FILE : wc -l Filename
+
+    NUMBER OF BYTES IN FILE : wc -c Filename
+
+    ADD COUNT TO EACH LINE : nl Filename
+
+
+
+
+
+
+
+
+
+
+
+
+
+

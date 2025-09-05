@@ -121,6 +121,46 @@ REMOVE :
         rm -- Filename
 
 
+COPY : 
+
+    COPY AND PASTE : cp Source/File/Path Destination/Path
+
+    RECURSIVELY COPY CONTENTS WITHIN DIRECTORY : cp -r Directory/Path/ Destination/Path
+
+    INTERACTIVE IN CASE OF OVER WRITING : cp -i Path/To/File/ Destination/Path
+
+
+MOVE  : 
+
+    RENAME OR CUT AND PASTE : mv Source/File_OR_Folder/Path Destination/Path
+
+    GIVE INFO WHAT IS HAPPENING : mv -v Source/File_OR_Folder/Path Destination/Path
+
+    PREVENT OVER WRITING : mv -n Source/File_OR_Folder/Path Destination/Path
+
+    CREATE BACKUP IN CASE OF OVER WRITING : mv -b Source/File_OR_Folder/Path Destination/Path
+
+
+ALIAS :
+
+    CREATE ALIAS : alias nickname='commands'
+
+    CREATE PERMANENT ALIAS : go to ~/.bashrc and add above line
+
+    REMOVE ALIAS : unalias nickname
+
+
+LINKING : 
+
+    CHECK LINKS INODE NUMBER : ls -i
+
+    CREATE HARD LINK : ln /Path/To/File LinkName
+
+    CREATE SOFT LINK : ln -s /Path/To/File LinkName
+
+    REMOVE LINK : unlink LinkName
+
+
 HISTORY : 
 
     LIST ALL PREVIOUSLY USED COMMANDS : history OR cat .bash_history
@@ -134,6 +174,4 @@ HISTORY :
     SEARCH COMMAND IN HISTORY : ctrl+R and part of command
 
     AUTOMCOMPLETE : command + TAB
-
-    
 
