@@ -1,0 +1,16 @@
+animals.txt
+Desktop
+Documents
+Downloads
+GitHub_PC.code-workspace
+LANGUAGE
+lists.txt
+Music
+OPERATING_SYSTEM
+OVER_THE_WIRE
+Pictures
+plants.txt
+Public
+qr-env
+Templates
+Videos

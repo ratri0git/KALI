@@ -118,7 +118,7 @@ XARGS :
 
         MODIFY PERMISSIONS FOR SPECIFIC FILES : echo "Filename" | xargs -I {} chmod rwx {}
 
-        
+
 SORT : 
 
     SORT BY CHARACTOR VALUE : sort Filename
@@ -145,38 +145,6 @@ UNIQUE :
     GET DUPLICATE VALUES WITH DUPLICATES : uniq -D Filename
 
     OVERCOME NON ADJECENT DUPLICATES : sort Filename | uniq
-
-
-GREP :
-
-    SEARCH PATTERN IN FILE : grep KeyPattern Filename
-
-    IGNORE LOWER UPPER CASES IN PATTERN : grep -i KeyPattern Filename
-
-    SEARCH EXACT WORD IN FILE : grep -w Word Filename
-
-    RETURN NUMBER LINE OF SEARCH PATTERN : grep -n KeyPattern Filename
-
-    RETURN EXCEPT PATTERN IN LINE : grep -v KeyPattern Filename
-
-    HOW MANY TIMES A PATTERN FOUND : grep -c KeyPattern Filename
-
-    SEARCH IN EVERY FILE IN DIRECTORY AND SUBDIRECTORIES : grep -R KeyPattern /Path/Of/Directory
-    
-
-REGULAR EXPRESSIONS : 
-
-    LINE BIGINNING WITH PATTERN : grep ^Pattern Filename
-
-    LINE ENDING WITH PATTERN : grep Pattern$ Filename
-
-    LINE CONTAINING THIS CHARACTOR : grep char. Filename
-
-    LINE CONTAINING THESE CHARACTORS IN BRACKETS: grep some[a1B2c3]some Filename
-
-    LINE EXCLUDING CHARACTORS IN BRACKETS :  grep some[^a1b2C3]some Filename
-
-    LINE CONTAINING THESE CHARACTORS IN RANGE : grep some[A-Z]some Filename
 
 
 TRANSLATE : 

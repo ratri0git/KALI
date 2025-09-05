@@ -1,0 +1,56 @@
+GREP :
+
+    SEARCH PATTERN IN FILE : grep KeyPattern Filename
+
+    IGNORE LOWER UPPER CASES IN PATTERN : grep -i KeyPattern Filename
+
+    SEARCH EXACT WORD IN FILE : grep -w Word Filename
+
+    RETURN NUMBER LINE OF SEARCH PATTERN : grep -n KeyPattern Filename
+
+    RETURN EXCEPT PATTERN IN LINE : grep -v KeyPattern Filename
+
+    HOW MANY TIMES A PATTERN FOUND : grep -c KeyPattern Filename
+
+    SEARCH IN EVERY FILE IN DIRECTORY AND SUBDIRECTORIES : grep -R KeyPattern /Path/Of/Directory
+    
+    SUPRESS FILENAME IN RESULT FOR MATCH : grep -h KeyPattern Filename
+
+    GET ONLY FILENAME IN RESULT FOR MATCH : grep -l KeyPattern /Path/
+
+    MATCH KEYWORD FROM ONE FILE INTO OTHER FILE : grep -f KeywordFileName OtherFilesName
+
+    CHECK WITHOUT PRINTING ANYTHING : grep -q KeyPattern Filename
+
+
+REGULAR EXPRESSIONS : 
+
+    LINE BIGINNING WITH PATTERN : grep ^Pattern Filename
+
+    LINE ENDING WITH PATTERN : grep Pattern$ Filename
+
+    LINE CONTAINING THIS CHARACTOR : grep char. Filename
+
+    LINE CONTAINING THESE CHARACTORS IN BRACKETS: grep some[a1B2c3]some Filename
+
+    LINE EXCLUDING CHARACTORS IN BRACKETS :  grep some[^a1b2C3]some Filename
+
+    LINE CONTAINING THESE CHARACTORS IN RANGE : grep some[A-Z]some Filename
+
+
+EGREP : 
+
+    SEARCH MULTIPLE WORDS : 
+
+        egrep "Word_1|Word_N" File_1 File_N
+        grep -e Word_1 -e Word_N Filename
+
+
+GET PID OF PROCESS : pgrep ProcessName
+
+TO SEARCH SPECIAL CHARACTOR CONTAINING KEYWORD : fgrep "include.dot" Filename
+
+MATCH IN ZIPPED FILE : zgrep KeyPattern Filename
+
+MATCH IN PDF FILE : pdfgrep
+
