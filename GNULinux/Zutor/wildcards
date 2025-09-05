@@ -5,7 +5,6 @@
 [X-Y] : FROM TO
 
 
-
 LIST FILES ENDING WITH SPECIFIC EXTENSION : ls *.exe
 
 CREATE N FILES : touch FileNameStarting{1..N}
