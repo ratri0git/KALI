@@ -19,6 +19,3 @@ SCP : SECURE COPY PROTOCOL
 
     RECIEVE COPIED FILE : scp UserName@IP_Address:/Remote/Permissible/Path/FileName
 
-
-
-
