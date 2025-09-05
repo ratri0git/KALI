@@ -141,13 +141,15 @@ MOVE  :
     CREATE BACKUP IN CASE OF OVER WRITING : mv -b Source/File_OR_Folder/Path Destination/Path
 
 
-ALIAS :
+ALIAS : 
 
-    CREATE ALIAS : alias nickname='commands'
+    CREATE ALIAS : alias NickName='Command_1; Command_2; Command_N'
+
+    LIST ALIASES : alias
+
+    REMOVE ALIAS : unalias NickName
 
     CREATE PERMANENT ALIAS : go to ~/.bashrc and add above line
-
-    REMOVE ALIAS : unalias nickname
 
 
 LINKING : 

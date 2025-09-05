@@ -10,22 +10,6 @@ STAT :
     GET SPECIFIC INFO : stat --printf="Type if You want : %n" Path/To/Folder/File
 
 
-XARGS : 
-
-    CONVERT STANDARD OUTPUT INTO ARGUMENT : commands_with_stdout | xargs commands_with_argument_need
-
-    GET N WORDS PER LINE FROM A FILE OR COMMANDS OUTPUT : echo "Filename" | xargs -n N echo
-
-    SPLIT ON NULL CHARACTOR : echo "Filename" | xargs -n N -0 echo
-
-    REPLACEMET : 
-
-        ADD GIVEN MESSAGE FOR EACH OUTPUT LINE : echo "Filename" | xargs -n N  -I {} echo "Message" {}
-
-        USE EVRY WORD IN FILE AS NAME FOR NEW FILES IN GIVEN FOLDER : echo "Filename" | xargs -I {} /Path/To/Folder {}.extension
-
-        MODIFY PERMISSIONS FOR SPECIFIC FILES : echo "Filename" | xargs -I {} chmod rwx {}
-
 
 ENVIRONMENT VARIABLES : 
 
@@ -35,14 +19,6 @@ ENVIRONMENT VARIABLES :
 
     CREATE A ENVIRONMENT VARIABLE : Variable_Name='Value'
 
-
-ALIAS : 
-
-    CREATE ALIAS : alias NickName='Command_1; Command_2; Command_N'
-
-    LIST ALIASES : alias
-
-    REMOVE ALIAS : unalias NickName
 
 
 SHOW ALL ENVIRONMENT VARIABLES AND FUNCTIONS FOR CURRENT SHELL : set
