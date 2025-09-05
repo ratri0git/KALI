@@ -95,13 +95,6 @@ EDITORS :
     
     OPEN NANO : nano Filename
 
-    
-FIND : 
-
-    FILE BY NAME IN DIRECTORY : find /Directory -name Filename
-
-    FOLDER BY NAME IN DIRECTORY : find /Directory -type d -name Foldername
-
 
 REMOVE : 
 

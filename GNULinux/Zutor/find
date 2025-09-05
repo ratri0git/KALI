@@ -1,0 +1,31 @@
+FIND : 
+
+    FIND BY NAME IN DIRECTORY : find /Directory -type d -name Foldername
+
+    FIND FILE OF X MB SIZE : find /Path/ -size XM
+
+    FIND BY TYPE : find /Path/ -type f 
+
+        FILE : f
+        FOLDER : d
+        SYMBOLIC LINK : l
+        BLOCK DEVICE : b
+        SOCKET : s
+
+    SEARCH FOR SPECIFIC USER : find /Path/ -user UserName
+
+    SEARCH FOR INODE NUMBER : find /Path/ -inum INODE_NUM
+
+    SEARCH ON BASIS OF NUMBER OF LINKS : find /Path/ -links NUM
+
+    SEARCH MATCHING PERMISSIONS : find /Path/ -oerm /u=rwx
+
+    SEARCH EMPTY FILES ; find /Path/ -empty
+
+    SEARCH FOR SIZE FROM X TO Y MB : find /Path/ -size +X -size -Y
+
+
+FIND AND EXECUTE : 
+
+    FIND AND DELETE EMPTY FILES : find . -empty -exec rm {} \;
+
