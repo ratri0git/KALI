@@ -16,6 +16,8 @@ SHELL:
 
     DRY RUN SCRIPTS TO SEE EXPECTED OUTCOME : Scripts_OR_Commands --dry-run OR -n
 
+    RECORD ALL TERMINAL ACTIONS : script WHEN_DONE crtl d 
+
     
 HELP : 
 
