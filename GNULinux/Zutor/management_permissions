@@ -1,0 +1,66 @@
+APPENDIX : 
+
+    READ : r OR 4
+    WRITE : w OR 2
+    EXECUTE : x OR 1 
+    EMPTY : - OR 0
+
+    USER : u
+    GROUP : g
+    OTHER : o
+    ALL : a
+
+    GIVE : +
+    TAKE : -
+
+    SETUID : 2
+    SETGID : 4
+    STICKY BIT : 1
+
+
+CHANGE PERMISSIONS : 
+    
+    GIVE ALL PERMISSIONS TO ALL FOR A FILE : 
+
+        chmod u=rwx,g=rwx,o=rwx Filename
+        chmod ugo=rwx Filename
+        chmod 777 Filename
+
+    GIVE ALL PERMISSIONS TO USER AND TAKE FROM GROUP AND OTHER : chmod u+rwx,go-rwx Filename
+
+    TAKE ALL PERMISSIONS FROM ALL : chmod a-rwx Filename
+
+    GIVE PERMISSIONS TO DIRECTORY AND CONTAINED FILES : chmod -R u=rwx,g=rx,o=r 
+
+
+CHANGE OWNERSHIPS : 
+
+    CHANGE GROUP AND OWNER : sudo chown New_Owner:New_Group Filename
+
+    CHANGE OWNER : sudo chown New_OwnerName Filename
+
+    CHANGE GROUP : sudo chgrp New_GroupName Filename
+
+
+  ACCESS CONTROL LIST (+) : 
+
+    GET FILE ACL : getfacl /Path/To/Folder/Filename
+
+    SET FILE ACL FOR SPECIFIC GROUP : sudo setfacl -m g:GroupName:rwx /Path/To/Folder
+
+    SET FILE ACL FOR SPECIFIC USER : sudo setfacl -m u:UserName:rwx /Path/To/Folder
+
+    SET FILE ACL RECURSIVELY : sudo setfacl -mR g:GroupName:rwx /Path/To/Folder
+
+    SET FILE ACL DEFAULT FOR NEWLY ADDED FOLDER OR FILE OR USER : sudo setfacl -md g:GroupName:rwx /Path/To/Folder
+
+    REMOVE DEFAULT ACL PERMISSIONS : sudo setfacl -k /Path/To/Folder
+
+    REMOVE FILE ACL FOR SPECIFIC USER : sudo setfacl -x u:UserName:rwx ath/To/Folder
+
+    REMOVE FILE ACL FOR ALL FILES : sudo setfacl -Rb Path/To/Folder/
+
+  
+
+
+

@@ -62,54 +62,7 @@ ROOT PREVILAGE :
     ADD USER TO GROUP SUDO :  sudo usermod -aG sudo UserName
 
 
-APPENDIX : 
 
-    DIRECTORY : d
-    FILE : -
-    LINK : l
-
-    READ : r OR 4
-    WRITE : w OR 2
-    EXECUTE : x OR 1 
-    EMPTY : - OR 0
-
-    USER : u
-    GROUP : g
-    OTHER : o
-    ALL : a
-
-    GIVE : +
-    TAKE : -
-
-    SETUID : 2
-    SETGID : 4
-    STICKY BIT : 1
-
-
-CHANGE PERMISSIONS : 
-    
-    GIVE ALL PERMISSIONS TO ALL FOR FILE : 
-
-        chmod u=rwx,g=rwx,o=rwx Filename
-        chmod ugo=rwx Filename
-        chmod 777 Filename
-
-    GIVE ALL PERMISSIONS TO USER AND TAKE FROM GROUP AND OTHER : chmod u+rwx,go-rwx Filename
-
-    TAKE ALL PERMISSIONS FROM ALL : chmod a-rwx Filename
-
-    GIVE PERMISSIONS TO DIRECTORY AND CONTAINED FILES : chmod -R u=rwx,g=rx,o=r 
-
-
-CHANGE OWNESHIPS : 
-
-    CHANGE GROUP AND OWNER : sudo chown New_Owner:New_Group Filename
-
-    CHANGE OWNER : sudo chown New_Owner Filename
-
-    CHANGE GROUP : sudo chgrp New_Group Filename
-
-    
 GROUPS : 
 
     CHECK A GROUP INFO : getent group GroupName
@@ -155,24 +108,6 @@ STICKY BIT :
 
     MAKE DIRECTORY OR FILE WRITE PROTECTED : sudo chmod o+t Path/To/Folder_OR_File
 
-
-ACCESS CONTROL LIST (+) : 
-
-    GET FILE ACL : getfacl /Path/To/Folder/File
-
-    SET FILE ACL FOR SPECIFIC GROUP : sudo setfacl -m g:GroupName:rwx /Path/To/Folder
-
-    SET FILE ACL FOR SPECIFIC USER : sudo setfacl -m u:UserName:rwx /Path/To/Folder
-
-    SET FILE ACL RECURSIVELY : sudo setfacl -mR g:GroupName:rwx /Path/To/Folder
-
-    SET FILE ACL DEFAULT FOR NEWLY ADDED FOLDER OR FILE OR USER : sudo setfacl -md g:GroupName:rwx /Path/To/Folder
-
-    REMOVE DEFAULT ACL PERMISSIONS : sudo setfacl -k /Path/To/Folder
-
-    REMOVE FILE ACL FOR SPECIFIC USER : suso facl -x u:UserName ath/To/Folder
-
-    REMOVE FILE ACL FOR ALL FILES : suso facl -Rb Path/To/Folder/
 
 
 FILE ATTRIBUTES : 
