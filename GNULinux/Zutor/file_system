@@ -1,3 +1,14 @@
+LINKING : 
+
+    CHECK LINKS INODE NUMBER : ls -i
+
+    CREATE HARD LINK : ln /Path/To/File LinkName
+
+    CREATE SOFT LINK : ln -s /Path/To/File LinkName
+
+    REMOVE LINK : unlink LinkName
+
+
 DF : 
 
     SEE DISK FILE SYSTEM : df

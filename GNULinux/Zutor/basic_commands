@@ -147,17 +147,6 @@ ALIAS :
     CREATE PERMANENT ALIAS : go to ~/.bashrc and add above line
 
 
-LINKING : 
-
-    CHECK LINKS INODE NUMBER : ls -i
-
-    CREATE HARD LINK : ln /Path/To/File LinkName
-
-    CREATE SOFT LINK : ln -s /Path/To/File LinkName
-
-    REMOVE LINK : unlink LinkName
-
-
 HISTORY : 
 
     LIST ALL PREVIOUSLY USED COMMANDS : history OR cat .bash_history
