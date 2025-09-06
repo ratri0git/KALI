@@ -37,3 +37,49 @@ PROCESS TERMINATION :
 
     LIST SIGNALS FOR KILL : kill -l 
 
+
+TOP :
+
+    SUMMARY DATA AREA :
+
+        INTERACTIVE DETAILS OF ALL ONGOING PROCESSES : top
+
+        HIDE TOP MOST LINE IN VIEW : press l
+
+        SEE INFO FOR ALL CPUS : press 1
+
+        CPU USAGE GRAPH : press t
+
+        RAM AND SWAP GRAPH : press m
+
+        CHANGE MEMORY UNITS KB MB GB TB : press E
+
+    COLUMN HEADERS AND TASK INFO PROCESSE LIST : 
+
+        CHANGE REFRESH RATE OF TOP IN SECONDS : press d OR spacebar or enter
+
+        FILTER BY USERNAME : press u and UserName     
+
+    NICE : 
+
+        CHANGE NICE VALUE : 
+            
+            FOR TOP : press r and PID 
+            REASSIGN NICE VALUE : sudo renice -n Value -p PID 
+            ASSIGN WHILE RUUNING Commands : sudo nice -n Value Commands
+
+
+MANAGEMENT : 
+
+    SHOW ACTIVE JOBS ON CURRENT TERMINAL : jobs
+
+    RESUME JOB TO FOREGROUND : fg %JOB_ID
+
+    RESUME JOB TO BACKGROUND : bg %JOB_ID
+
+    RUN JOB IN BACKGROUND : Commands &
+
+    LIST JOBS and PID : jobs -l
+
+    RUN SCRIPT FREE OF TERMINAL AND OUTPUT IN NOHUP.OUT FILE : nohup /Path/ScriptName & 
+
