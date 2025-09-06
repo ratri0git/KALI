@@ -1,28 +1,4 @@
 
-PS :
-
-    PRINT SNAPSHOT OF PROCESSES : ps
-
-    PRINT SNAPSHOT OF ALL PROCESSES BY CURRENT USER : ps a
-
-    PRINT SNAPSHOT OF PROCESSES WITH EVERYTHING : ps -e OR ps -A
-
-    PRINT SNAPSHOT OF ALL PROCESSES BY ALL USERS : ps ax
-
-    PRINT SNAPSHOT OF ALL USERS ALL PROCESSES : ps aux
-
-    ABOVE THINGS IN DETAILED LONG FORMAT : ps axl 
-
-    ABOVE THINGS IN HEIRARCHY OR FORCED FORMAT : ps fax
-
-    ABOVE THINGS IN HEIRARCHY AND FORCED EVERYTHING : ps -fHe
-
-    ABOVE THINGS IN HEIRARCHY AND FORCED WITH LINES : ps -fe --forest
-
-    ABOVE THINGS IN EXTRA FULL FORMAT : ps -F
-
-    SORT BY DESIRED FIELD  : ps aux --sort -field_-pfield
-
 
 TOP :
 
@@ -54,19 +30,9 @@ NICE :
     sudo nice -n Value Commands
 
 
-KILL : 
+ 
 
-    STOP A PROCESS : kill -9 PID
-
-    KILL A PROCESS : kill PID
-
-    KILL ON TOP : press k and PID and confirm
-
-    KILL ON JOBS RUN BY SPECIFIC USER : sudo killall -u UserName
-
-    KILL BY PROCESS NAME : pkill ProcessName
-
-
+   
 FOREGROUND AND BACKGROUND : 
 
     RUN JOB IN BACKGROUND : commands &
