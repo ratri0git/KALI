@@ -142,7 +142,7 @@ ALIAS :
 
     CREATE PERMANENT ALIAS : 
         
-        FILE LOCATION : ls -la ~/.bashrc 
+        FILE LOCATION : ls -la ~/.bashrc OR ~/.profile
         
         ADD LINES : alias NickName='Command_1; Command_2; Command_N'
 

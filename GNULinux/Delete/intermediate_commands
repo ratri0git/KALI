@@ -10,12 +10,6 @@ STAT :
     GET SPECIFIC INFO : stat --printf="Type if You want : %n" Path/To/Folder/File
 
 
-
-
-
-SHOW ALL ENVIRONMENT VARIABLES AND FUNCTIONS FOR CURRENT SHELL : set
-
-
 INTERACTIVE SHELLS : 
 
     INTERACTIVE NO LOGIN SHELL == ALREADY LOGGED IN USER SHELL : .bashrc file
@@ -25,9 +19,4 @@ INTERACTIVE SHELLS :
     GET SHELL TYPE : echo $0 OR echo $SHELL
 
     UPDATE FILE : source .bashrc OR . .profile
-
-
-
-
-    
 
