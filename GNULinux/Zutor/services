@@ -1,0 +1,22 @@
+SYSTEMCTL : 
+
+    START A SERVICE : sudo systemctl start ServiceName
+
+    CHECK STATUS OF SERVICE : sudo systemctl status ServiceName
+
+    STOP A SERVICE : sudo systemctl stop ServiceName
+
+    RESTART A SERVICE : sudo systemctl restart ServiceName
+
+    START SERVICE WHEN SYSTEM REBOOT : sudo systemctl enable --now ServiceName
+
+    DISABLE SERVICE : sudo systemctl disable ServiceName
+            
+    CHECK SERVICE ENABLED OR NOT : sudo systemctl is-enabled --now ServiceName
+
+    PREVENT SERVICE START : sudo systemctl mask ServiceName
+
+    REMOVE MASK FROM SERVICE : sudo systemctl unmask ServiceName
+
+    LIST RUNNING SERVICES : sudo systemctl | grep -i running
+
