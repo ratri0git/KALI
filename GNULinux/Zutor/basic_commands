@@ -138,13 +138,17 @@ MOVE  :
 
 ALIAS : 
 
-    CREATE ALIAS : alias NickName='Command_1; Command_2; Command_N'
+    CREATE LOCAL ALIAS : alias NickName='Command_1; Command_2; Command_N'
+
+    CREATE PERMANENT ALIAS : 
+        
+        FILE LOCATION : ls -la ~/.bashrc 
+        
+        ADD LINES : alias NickName='Command_1; Command_2; Command_N'
 
     LIST ALIASES : alias
 
     REMOVE ALIAS : unalias NickName
-
-    CREATE PERMANENT ALIAS : go to ~/.bashrc and add above line
 
 
 HISTORY : 

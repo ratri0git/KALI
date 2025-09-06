@@ -9,6 +9,43 @@ LINKING :
     REMOVE LINK : unlink LinkName
 
 
+ENVIRONMENT VARIABLES : 
+
+    LIST ALL ENVIRONMENT VARIABLES : env OR printenv
+
+    GET VALUE OF ENVIRONMENT VARIABLE : echo $VARIABLE_NAME
+
+    CREATE A LOCAL ENVIRONMENT VARIABLE : VARIABLE_NAME='Value'
+
+    ADD LOCAL ENVIRONMENT VARIABLE : export VARIABLE_NAME='Value'
+
+    SEE PATH ENVIRONMENT VARIABLE : echo $PATH
+
+    ADD PATH VALUE : PATH="$PATH:/Path/To/Script/File "
+
+    PERMANENT ENVIRONMENT VARIABLE FOR A USER : 
+
+        FILE LOCATION : ls -la ~/.profile OR ~/.bashrc
+
+        ADD LINES : export VARIABLES_NAME="Variable_Value"
+
+        UPDATE FILE CHANGES : source ~/.profile
+
+    PERMANENT ENVIRONMENT VARIABLES FOR ALL USERS : 
+
+        FILE LOCATION : ls -la /etc/profile
+
+        ADD LINES : export VARIABLES_NAME="Variable_Value"
+
+        UPDATE FILE CHANGES : source /etc/profile
+
+
+
+
+
+
+    
+
 DF : 
 
     SEE DISK FILE SYSTEM : df
@@ -40,6 +77,4 @@ DD :
     COPY M NUMBER OF CHARACTORS ONLY WITH BLOCKSIZE N : dd if=/Path/inputfile of=/Path/outputfile bs=N count=M
 
     SKIP X NUMBER OF CHARACTORS WHILE COPY : dd if=/Path/inputfile of=/Path/outputfile bs=N skip=8
-
-
 
