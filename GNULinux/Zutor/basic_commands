@@ -140,11 +140,18 @@ ALIAS :
 
     CREATE LOCAL ALIAS : alias NickName='Command_1; Command_2; Command_N'
 
-    CREATE PERMANENT ALIAS : 
+    CREATE PERMANENT ALIAS FOR A USER : 
         
         FILE LOCATION : ls -la ~/.bashrc OR ~/.profile
         
         ADD LINES : alias NickName='Command_1; Command_2; Command_N'
+    
+    CREATE PERMANENT ALIAS FOR ALL USERS : 
+        
+        FILE LOCATION : ls -la /etc/profile
+        
+        ADD LINES : alias NickName='Command_1; Command_2; Command_N'
+
 
     LIST ALIASES : alias
 
