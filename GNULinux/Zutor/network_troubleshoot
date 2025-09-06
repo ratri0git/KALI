@@ -1,0 +1,50 @@
+PING : PACKET INTERNET GROPER
+
+    CHECK CONNECTION : ping IPAddress_OR_WebLink
+
+    SEND N PACKETS : ping -c N IPAddress_OR_WebLink
+
+    SEND AT INTERVAL OF N SECONDS : pig -i N IPAddress_OR_WebLink
+
+    SEE ONLY SUMMARY : ping -cN -q IPAddress_OR_WebLink
+
+    SEND PACKET AS FAST AS POSSIBLE : sudo ping -f IPAddress_OR_WebLink
+
+    SEND PACKETS OF N SIZE : ping -s N IPAddress_OR_WebLink 
+
+    STOP AFTER N SECONDS : ping -w N IPAddress_OR_WebLink     
+
+    PRINT WITH TIMESTAMP : ping -D IPAddress_OR_WebLink
+
+    CHECK FOR NETWORK INTERFACE : ping localhost
+
+
+NETSTAT :
+
+    NUMBER OF CONNECTIONS ON SPECIFIC PORT OR IP : netstat -putan | grep :PortNumber_OR_IPAddress
+
+        p = PID PROGRAM NAME
+        u = UDP
+        t = TCP
+        n = NUMERIC ADDRESS
+        l = LISTENING PORT
+        a = ALL SOCKETS
+        i = INTERFACES
+
+    SEE STATISTICS : netstat -s
+
+
+TRACE ROUTE : 
+
+    SEE ROUTE : traceroute IPAddress_OR_WebLink
+
+    CHANGE PACKET LENGTH TO N BYTES : traceroute IPAddress_OR_WebLink N
+
+    CHANGE NUMBER OF PACKET PER HOP TO N : traceroute -q N IPAddress_OR_WebLink
+
+    CHECK FOR PORT N : traceroute -p N IPAddress_OR_WebLink
+
+    USE IPV4 OR IPV6 : traceroute -4 OR -6 IPAddress_OR_WebLink
+
+    TRACE THROUGH GATE : traceroute -g Gate_IPAddress IPAddress_OR_WebLink
+
