@@ -57,11 +57,22 @@ DU :
 
     SEE SUBDIRECTORIES AND DIRECTORY USAGE : du /Path/To/Files/Folders
 
-    SEE ALL DIRECTORIES AND FILES USAGE : du -a
+    SEE FOR ALL : du -a OR df -a
 
     SUMMARIZES USAGE BY DIRECTORY : du -s /Path/
 
     USE NCDU : ncdu
+
+
+FREE : 
+
+    CHECK RAM AND SWAP : free
+
+    ADD TOTAL IN LAST : free --total
+
+    REFRESH EVERY N SECONDS : free -s N
+
+    REFRESH EVERY M TILL N TIMES  : free -s M -c N 
 
 
 DD : 
