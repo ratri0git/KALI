@@ -40,15 +40,11 @@ ENVIRONMENT VARIABLES :
         UPDATE FILE CHANGES : source /etc/profile
 
 
-
-
-
-
-    
-
 DF : 
 
     SEE DISK FILE SYSTEM : df
+
+    SEE FILE SYSTEM WITH TYPE : df -T
 
     SHOW TOTAL IN LAST LINE : df --total OR du -c
 
@@ -63,7 +59,7 @@ DU :
 
     SEE ALL DIRECTORIES AND FILES USAGE : du -a
 
-    SUMMARIZES USAGE BY DIRECTORY : du -s
+    SUMMARIZES USAGE BY DIRECTORY : du -s /Path/
 
     USE NCDU : ncdu
 
@@ -77,4 +73,15 @@ DD :
     COPY M NUMBER OF CHARACTORS ONLY WITH BLOCKSIZE N : dd if=/Path/inputfile of=/Path/outputfile bs=N count=M
 
     SKIP X NUMBER OF CHARACTORS WHILE COPY : dd if=/Path/inputfile of=/Path/outputfile bs=N skip=8
+
+
+TYPES : 
+
+    FILE : -
+    DIRECTORY : d
+    LINK : l
+    DEVICE FILE : c
+    SOCKET : s
+    FIFO OR NAMED FILE : p
+    BLOCK DEVICE : d
 
