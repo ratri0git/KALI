@@ -9,7 +9,11 @@ CRON :
 
     SCHEDULE CRON JOBS : crontab -e
 
-    DENY USER TO EDIT CRON FILE : sudo vi /etc/cron.deny AND add username
+    DENY USER TO EDIT CRON FILE : 
+        
+        FILE LOCATION : sudo vi /etc/cron.deny 
+        
+        ADD LINES : UserName
 
     DELETE ALL CRON JOBS : crontab -r
 
@@ -30,7 +34,7 @@ ANACRON :
 
     CHECK ANACRON DEFAULT TIMINGS : cat /etc/crontab
 
-    CHECK OR CHANGE LAST TIMINGS OF ANACRON JOB RUN : cd /var/spool/anacron and sudo vi Filename 
+    CHECK OR CHANGE LAST TIMINGS OF ANACRON JOB RUN : sudo vi /var/spool/anacron/Filename 
 
     SEE ANACRON CONFIGURATION FILE : cat /etc/anacrontab
 
@@ -61,8 +65,4 @@ SYSTEMD TIMER :
     RUN TIMER : sudo systemctl start ServiceName.timer
 
     LIST OF ALL TIMERS :  systemctl list-timers
-
-
-
-
 
