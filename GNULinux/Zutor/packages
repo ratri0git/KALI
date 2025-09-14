@@ -119,4 +119,20 @@ ZIP :
 
         7z x Filename.7z
         7z x Filename.7z -o/New/Path/Folder
+        
 
+INSTALLATION : 
+
+    UPDATE PACKAGE LIST REPO : apt update
+
+    WITHOUT DELETING OLD PACKAGES : apt upgrade
+
+    WITH DELETING OLD PACKAGES : apt full-upgrade
+
+    INSTALL A PACKAGE WITH ALL YES : sudo apt install PackageName -y
+
+    REMOVE A PACKAGE : sudo apt remove PackageName
+
+    REMOVE DEPENDENCIES : sudo apt autoremove
+
+    
