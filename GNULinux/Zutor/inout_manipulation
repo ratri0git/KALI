@@ -158,26 +158,69 @@ TRANSLATE :
 
 SED : 
 
-    SUBSTITUTE FIRST OCCURENCE IN LINE : 
-        
-        sed 's/old_Value/New_Value/g' Filename
-        sed 's:old_Value:New_Value:g' Filename
+    SUBSTITUTE OCCURENCE IN LINE : 
+
+        FOR ALL LINES : 
+
+            sed 's/old_Value/New_Value/g' Filename
+            sed 's:old_Value:New_Value:g' Filename
+
+        FOR SPECIFIC NTH LINE OR EXCEPT IT : 
+
+            sed 'N s/old_Value/New_Value/g' Filename
+            sed 'N! s:old_Value:New_Value:g' Filename
 
     MULTIPLE SED COMMANDS : sed -e 's/old/new/g' -e 's/old2/new2/g' Filename
 
-    USE SEDFILE CONTAINING SED COMMANDS : sed -f sedfile Filename
-
-    PUT BRACKETS AROUND SEARCHKEY : sed 's/Searkey/{&}/g' Filename
+    USE SEDFILE CONTAINING SED COMMANDS : sed -f SedFile Filename
     
     TURN OFF PRINTING : sed -n 's/old/new/g' Filename
 
-    PRINT ONLU UPDATED LINES : sed -n 's/old/new/p' Filename
+    PRINT ONLY UPDATED LINES : sed -n 's/old/new/p' Filename
 
-    GET ONLY Nth LINE : sed -n Np Filename
+    GET ONLY NTH LINE : sed -n 'Np' Filename
 
     GET ONLY LAST LINE : sed -n '$p' Filename
+
+    DELETE NTH LINE : sed 'Nd' Filename
 
     PRINT IN RANGE OF NtH TO Mth LINE : sed -n 'N,M p' Filename
 
     PRINT AFTER FINDING LINE START WITH X TILL FINDING LINE START WITH Y : sed -n '/^X,/^Y/p' Filename
+
+    GET LINES CONTAINING KEYWORD : sed -n '/KeyWord/p' Filename
+
+    GET N MORE LINES FROM MTH LINE : sed -n 'M,+N p' Filename
+    
+    GET MORE LINES FROM N WITH M LINES SKIPPED : sed -n 'N~Mp' Filename
+    
+    APPLY CHANGES IN FILE : sed -i 's/Old/New/g' Filename
+
+    REPLACE AFTER FINDING KEYWORD : sed '/KeyWord/ s/Old/New/g' Filename
+
+    DELETE EMPTY LINES : sed '/^$/d' Filename
+
+    TRANSFER SEARCHED DATA TO OTHER FILE : sed '/KeyWord/ w NewFileName' Filename
+
+    APPEND AFTER NTH LINE : sed 'N a Write_Something' Filename
+
+    CHANGE NTH LINE : sed 'N c Something_Write' Filename
+
+    INSERT IN NTH LINE : sed 'N i Something_write' Filename
+
+    SEE HIDDEN CHARACTORS : sed -n 'l' Filename
+
+    ADD CONTENT OF A FILE AT NTH LINE : sed 'N r FileName' FileName
+
+    QUIT AFTER FIRST OCCURENCE : sed '/KeyWord/ q' Filename
+
+    ADD EXPRESSION AT NTH LINE : sed 'N e Commands' Filename
+
+    PRINT LINE NUMBER : sed '=' Filename
+
+
+    
+
+
+
 
