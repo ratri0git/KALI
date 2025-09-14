@@ -1,10 +1,20 @@
 SSH : SECURE SHELL
 
-    INSTALL : 
+    CHECK INSTALLED : file /etc/ssh/sshd_config
 
-        sudo apt install openssh-server
+    INSTALL : sudo apt install openssh-client openssh-server
+
+    START SERVICE : sudo systemctl start ssh
     
     CONNECT : ssh UserName@IP_Address
+
+    WITHOUT PASSWORD : 
+
+        GENERATE KEY : ssh-keygen
+
+        LIST FILES : ls .ssh
+
+        COPY PUBLIC KEY : ssh-copy-id UserName@IP_Address
 
 
 GRAPHICAL TOOLS : 
