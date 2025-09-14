@@ -61,6 +61,124 @@ CHANGE OWNERSHIPS :
     REMOVE FILE ACL FOR ALL FILES : sudo setfacl -Rb Path/To/Folder/
 
   
+NEW USER ACCOUNT :  
+    
+    ADD SERVICE ACCOUNT USER : sudo useradd UserName
+
+    ADD USER WITH HOME DIRECTORY : sudo useradd -m UserName 
+
+    ADD GENERAL USER : sudo adduser UserName
+
+    CHECK ALL USERS INFO : cat /etc/passwd
+
+    SHOW USER ID AND GROUPS ID : id UserName
+
+    SHOW USER PASSWORDS INFO : cat /etc/shadow
+
+    CHANGE PASSWORD : sudo passwd UserName
 
 
+DELETE USER : 
+
+    DELETE USER NAME : sudo userdel UserName
+
+    DELETE USER :  sudo deluser --remove-home UserName
+    
+
+SUPER USER ROOT : 
+
+    SUPER USER DO : sudo commands
+
+    SWITCH TO ROOT USER : sudo -i
+
+    SWITCH TO USER AND HOME DIRECTORY OF USER : su - UserName
+
+
+ROOT PREVILAGE : 
+
+    ADD USER TO ROOT : sudo visudo
+
+    ADD USER TO GROUP SUDO :  sudo usermod -aG sudo UserName
+
+
+GROUPS : 
+
+    CHECK A GROUP INFO : getent group GroupName
+
+    CREATE NEW GROUP : sudo groupadd GroupName
+
+    DELETE GROUP : sudo groupdel GroupName
+
+    MODIFY A GROUP : sudo groupmod -Options Arguments GroupName
+
+    CHECK ALL GROUPS : cat /etc/group
+
+    CHECK GROUPS ALL INFO : sudo cat /etc/gshadow
+
+    ADD GROUP ADMIN : sudo gpasswd -A UserName_1,UserName_N GroupName
+
+    ADD GROUP TO USER : sudo usermod -G GroupName UserName
+
+    APPEND USER TO GROUP : sudo usermod -a -G GroupName UserName
+
+    CHANGE MAIN GROUP OF USER : sudo usermod -g GroupName UserName
+
+
+GROUP ADMIN TASK : 
+
+    ADD NEW USER TO GROUP : gpasswd -a UserName GroupName
+
+    VIEW GROUP INFO : getent group GroupName
+
+    DELETE USER FROM GROUP : gpasswd -d UserName GroupName
+
+    SET GROUP PASSWORD : gpasswd GroupName
+
+
+EDIT /ETC/SHADOW : sudo chage -Options Arguments UserName
+
+EDIT /ETC/PASSWD : 
+
+    GET DATABASE ENTRY OF USER : getent passwd UserName
+
+    GET INFO ABOUT USER : finger UserName
+
+    CHANGE USER INFO  WITH FINGER : sudo chfn -Options Arguments UserName
+
+    UPDATE INFO IN PASSWD : sudo usermod -Options Arguments UserName
+
+
+LOCK UNLOCK : 
+
+    LOCK USER ACCOUNT : 
+        
+        sudo usermod -L UserName
+        sudo usermod -s /bin/nologin UserName
+
+    UNLOCK USER ACCOUNT : sudo usermod -U UserName
+
+
+ENTER A GROUP WITH GROUP PASSWORD AS TEMPORARY MAIN Group: newgrp GroupName
+
+ALLOW USER TO EXECUTE COMPILED FILE AS OWNER (SETUID) : chmod u+s Filename
+
+ALLOW USER TO CREATE FILE WITH GROUP ID (SETGID) : chmod g+s /Path/To/Folder/Group/
+
+
+STICKY BIT :
+
+    MAKE DIRECTORY OR FILE WRITE PROTECTED : sudo chmod o+t Path/To/Folder_OR_File
+
+
+FILE ATTRIBUTES : 
+
+    LIST FILE ATTRIBUTES : lsattr Path/To/File
+
+    MAKE FILE IMMUTABLE : sudo chattr +i Path/To/Fil
+
+    MAKE FILE APPEND ONLY : sudo chattr +a Path/To/File
+
+    MAKE WHOLE DIRECTORY IMMUTABLE : sudo chattr -R +i Path/To/Folder/
+
+    MAKE WHOLE DIRECTORY APPEND ONLY : sudo chattr -R +a Path/To/Folder/
 
