@@ -167,7 +167,7 @@ ALLOW USER TO CREATE FILE WITH GROUP ID (SETGID) : chmod g+s /Path/To/Folder/Gro
 
 STICKY BIT :
 
-    MAKE DIRECTORY OR FILE WRITE PROTECTED : sudo chmod o+t Path/To/Folder_OR_File
+    MAKE DIRECTORY OR FILE WRITE PROTECTED EXCEPT OWNER : sudo chmod o+t Path/To/Folder_OR_File
 
 
 FILE ATTRIBUTES : 
@@ -181,4 +181,14 @@ FILE ATTRIBUTES :
     MAKE WHOLE DIRECTORY IMMUTABLE : sudo chattr -R +i Path/To/Folder/
 
     MAKE WHOLE DIRECTORY APPEND ONLY : sudo chattr -R +a Path/To/Folder/
+
+DEFAULT PERMISSIONS : 
+
+    CHECK DEFAULT PERMISSIONS : 
+        umask
+        umask -S
+
+        0777 - AboveCommandsResult
+
+    TEMPORARY SET DEFAULT PERMISSIONS : umask 0777
 
