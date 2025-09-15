@@ -1,0 +1,70 @@
+'''
+
+INSTALLATION : 
+
+    CHECK IF INSTALLED : 
+        
+        sudo systemctl status postfix
+
+        mailx -V
+
+    INTSALL : 
+        
+        sudo apt install postfix
+
+        sudo apt install mailutils
+
+    START SERVICE : sudo systemctl start postfix.service
+
+
+CONFIGURATION : 
+
+    FILE LOCATION :  /etc/postfix/main.cf
+
+    EDIT : sudo vi main.cf
+
+    ADD LINES : 
+
+        relayhost = [smtp.gmail.com]:587 
+        myhostname = HostName
+
+        Location of sasl_passwd we saved :
+
+            smtp_sasl_password_maps = hash:/etc/postfix/sasl/sasl_passwd
+
+        Enables SASL authentication for postfix :
+
+            smtp_sasl_auth_enable = yes
+            smtp_tls_security_level = encrypt
+
+        Disallow methods that allow anonymous authentication :
+            smtp_sasl_security_options = noanonymous
+            
+    CREATE DIRECTORY AND FILE FOR PASSWORD : 
+        
+        mkdir /etc/postfix/sasl
+
+        touch /etc/postfix/sasl/sasl_passwd
+
+    ADD LINES IN FILE : 
+
+        [smtp.gmail.com]:587 MyEmailId@gmail.com:password
+
+            PASSWORD GENERATION : 
+
+                manage google account
+                ensure 2 step verification
+                app passwords
+                create new
+                copy and paste that password
+
+            MAKE DB FILE OF PASSWORD : 
+
+                postmap sasl_passwd
+
+EMAIL FORMAT : 
+
+    echo "Email body here" | mutt -s "Subject Here" -a /home/ratri0kali/hello.txt -- ratrisubscriber001@gmail.com
+
+
+'''
