@@ -1,0 +1,38 @@
+FIREWALLD : 
+
+    CHECK IF INTSALLED : firewalld --version
+
+    INTSALL : sudo apt install firewalld
+
+    START SERVICE : sudo systemctl start firewalld 
+
+    CHECK RULES : sudo firewall-cmd --list-all
+
+    LIST OF AWARE SERVICES : sudo firewall-cmd --get-services
+
+    RELOAD CONFIG OR REFRESH : sudo firewall-cmd --reload
+
+    LIST ALL ZONES : sudo firewall-cmd --get-zones
+
+    LIST ACTIVE ZONES : sudo firewall-cmd --get-active-zones
+
+    CHECK RULES FOR SPECIFIC ZONE : sudo firewall-cmd --zone=ZoneName --list-all
+
+    ADD SERVICE : sudo firewall-cmd --add-service=ServiceName
+
+    REMOVE SERVICE : sudo firewall-cmd --remove-service=ServiceName
+
+    PERMANENT ADD OR REMOVE SERVICE : sudo firewall-cmd --add-service=ServiceName --permanent
+
+    ADD OR REMOVE PORT : sudo firewall-cmd --add-port=PortNumber/ProtocolType
+    
+    BLOCK INCOMING TRAFFIC FROM IP : 
+
+        firewall-cmd --add-rich-rule='rule family="ipv4" source address="192.168.123.123" reject'
+
+    BLOCK OUTGOING TRAFFIC FROM IP : 
+
+        sudo firewall-cmd --direct --add-rule ipv4 filter OUTPUT 0-d IP_Adress -j DROP
+
+    ICMP BLOCK : sudo firewall-cmd -add-icmp-block-inversion
+
