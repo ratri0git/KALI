@@ -107,4 +107,20 @@ DMESG :
 
     CLEAR RING BUFFER : dmesg -c
 
+
+LOGS : 
+
+    LOCATION : /var/log
+
+    LOGROTATE : 
+
+        CONFIG FILE AND DIRECTORY : /etc/logrotate.conf
+
+        WRITE LOG ROTATE SCRIPT UNDER THIS FOLDER : /etc/logrotate.d/
+
+        CHECK LOGROTATE STATUS AND TRIGGER TIME : sudo systemctl status logrotate.timer
+
+        TRIGGER INSTANTLY : logrotate /var/log/logrotate.d/ScriptName
+
+        CHECK DEBUG : logrotate -d /var/log/logrotate.d/ScriptName
     
