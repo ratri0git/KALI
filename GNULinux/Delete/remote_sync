@@ -4,18 +4,8 @@ PSEUDO SYNC:
 
     SYNC ENTIRE DIRECTORY : rsync /Source/Path/Folder /Destination/Path/
 
-    SYNC DIRECTORY SUBDIRECTORIES FILES : rsync -r /Source/Path/Folder/* /Destination/Path
-
-    SYNC DIRECTORY SUBDIRECTORIES FILES HIDDEN FILES : rsync -r /Source/Path/Folder/ /Destination/Path
-
-    DELETE THINGS FROM DESTINATION NOT IN SOURCE : rsync -a /Source/Path/Folder/ /Destination/Path --delete
 
 
-SYNC ONLY UNCOMMON THINGS : 
-
-   VIA CHECKSUMS : rsync -rc Source/Path/Folder/ /Destination/Path
-
-   VIA TIMESTAMPS CHECK : rsync -a Source/Path/Folder/ /Destination/Path
 
 
 SSH CONNECT : ssh UserName@IP 

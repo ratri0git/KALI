@@ -29,3 +29,40 @@ SCP : SECURE COPY PROTOCOL
 
     RECIEVE COPIED FILE : scp UserName@IP_Address:/Remote/Permissible/Path/FileName
 
+
+RSYNC : REMOTE SYNC
+
+    SYNTAX : rsync -Options /Source/Path Destinatin_UserName@IP_Address:/Path/
+
+        ARCHIVE FILES : -a OR --archive
+        VERBOSE OUTPUT : -v OR --verbose
+        COMPRESSION : -z OR --compress
+        SHOW PROGRESS TRANSFER : --progress
+        BACKUP BEFORE DELETE AT SOURCE : -b
+        DELET BEFORE COPY AT SOURCE : -d
+        PROVIDE BACKUP LOCATIO AT SOURCE : --backup-dir=/Path/
+
+    SYNC DIRECTORY SUBDIRECTORIES FILES : rsync -r /Source/Path/Folder/* /Destination/Path
+
+    SYNC DIRECTORY SUBDIRECTORIES FILES HIDDEN FILES : rsync -r /Source/Path/Folder/ /Destination/Path
+
+    DELETE THINGS FROM DESTINATION NOT IN SOURCE : rsync -a /Source/Path/Folder/ /Destination/Path --delete
+
+    SYNC ONLY UNCOMMON THINGS : 
+
+        VIA CHECKSUMS : rsync -rc Source/Path/Folder/ /Destination/Path
+
+        VIA TIMESTAMPS CHECK : rsync -a Source/Path/Folder/ /Destination/Path
+
+
+        
+
+
+
+
+
+
+
+
+
+
