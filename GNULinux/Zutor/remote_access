@@ -54,15 +54,3 @@ RSYNC : REMOTE SYNC
 
         VIA TIMESTAMPS CHECK : rsync -a Source/Path/Folder/ /Destination/Path
 
-
-        
-
-
-
-
-
-
-
-
-
-
