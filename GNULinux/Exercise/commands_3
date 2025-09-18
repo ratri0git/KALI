@@ -16,7 +16,13 @@ GET TYPE OF FILE : file Filename
 
 LIST USB DEVICES CONNECTED : lsusb
 
+FIND LARGEST FILE : 
 
+    find /Path/ -type -f -exec ls -lh {} \; | sort -k5rh | head -1
 
+    du -sh /Path/ | sort -rh | head -1
 
+    ls -lSh /Path/
+
+CHANGE HOST NAME : hostnamectl set-hostname NewName
 
