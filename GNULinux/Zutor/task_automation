@@ -41,6 +41,8 @@ ANACRON :
 
 AT : 
 
+    CHECK SERVICE STATUS : sudo systemctl status atd
+
     CHECK SCHEDULED AT JOBS : atq
 
     RUN AFTER N MINUTES FROM NOW : at now +5 minutes

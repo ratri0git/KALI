@@ -1,0 +1,22 @@
+PRINT HOST NAME : hostname
+
+CHECK PERMISSIONS OF FOLDER OR FILE : getfacl /Path/To/Folder/File 
+
+LIST WITH INODE NUMBER : ls -i
+
+PERMANENT DELETION OF FILE WITH NO RECOVERY : shred -u Filename OR shred --remove Filename
+
+CHECK SYSTEM ARCHITECTURE : 
+    
+    sudo dmidecode 
+    
+    lscpu
+
+GET TYPE OF FILE : file Filename
+
+LIST USB DEVICES CONNECTED : lsusb
+
+
+
+
+

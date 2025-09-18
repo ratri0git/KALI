@@ -124,3 +124,15 @@ LOGS :
 
         CHECK DEBUG : logrotate -d /var/log/logrotate.d/ScriptName
     
+
+STAT : 
+
+    LIST DETAILS ABOUT FILE OR FOLDER : stat /Path/To/Folder/File
+
+        ACCESS : last time accessed 
+        MODIFY : last time content updated
+        CHANGE : last time permissions changed
+        BIRTH : when was created 
+
+    GET SPECIFIC INFO : stat --printf="Type if You want : %n" Path/To/Folder/File
+
